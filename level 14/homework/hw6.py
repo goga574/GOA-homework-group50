@@ -3,7 +3,7 @@
 num = 0
 
 for i in range(1, 6):
-    i * i
 
-num = num + i
+    num = num + (i*i)
 
+print(num)
