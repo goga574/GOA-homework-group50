@@ -5,6 +5,7 @@ i = 5
 while i < 30:
     if i % 2==0:
         print(i)
-    else:
-        print(str(i) + "odd")
-    i+=1
+    i += 1
+
+# for i in range(4 , 30,2):
+#     print(i)

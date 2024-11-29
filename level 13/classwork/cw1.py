@@ -1,1 +1,1 @@
-print("project day")
+print("no classwork and homework this day")

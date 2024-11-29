@@ -3,9 +3,16 @@
 i = 100
 
 while i < 200:
-    if i % 2==1:
-        print(str(i)+ "odd")
-    else:
+    if i % 2 == 0 :
         print(str(i) + "even")
-    
-    i = i + 1
+    else:
+        print(str(i) + "odd")
+    i += 1
+
+# for loop
+
+# for i in range(100,201):
+#     if i %  2 == 0:
+#         print(str(i) + "even")
+#     else:
+#         print(str(i) + "odd")

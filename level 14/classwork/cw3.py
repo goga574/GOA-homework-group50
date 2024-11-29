@@ -1,11 +1,11 @@
 #მომხმარებელს შემოატანინეთ რიცხვი შემდეგ კი მომხმარებლის შემოტანილ რიცხვამდე დაბეჭდეთ ყველა რიცხვის საშუალო არითეტიკული
 
-num = int(input("enter your number:"))
 
-average = 0
+num1 = int(input("enter number:"))
 
-for i in range(1, num+1):
-    
-    average = average + i
 
-print(average // num)
+num2 = 0
+
+for i in range(1,(num1 + 1)):
+    num2 += i
+print(num2 // num1)

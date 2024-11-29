@@ -1,5 +1,5 @@
+#  შექმენით სია რომელშიც იქნება ჯგუფი50 ის მოსწავლეები რომლებიც ახლა გაკვეთილზე ესწრება შემდეგ კი დაბეჭდეთ ეს სია
 
+members = ["sofia","giorgi","irakli","beqa","mariami","aleko","nikolozi","saba","nini"]
 
-list1 = ["giorgi", "lasha", 25 , 24.50, True, False]
-
-print(list1)
+print(members)
