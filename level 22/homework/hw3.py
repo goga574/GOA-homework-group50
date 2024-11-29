@@ -1,11 +1,10 @@
 # ააკეთეთ სია სადაც იქნება 10 ინტეჯერი , ინტეჯერები რომელიბ იქნება 10 ზე ნაკლები append ის დახმარებით შეიყვანეთ ახალ ცხრილში
 
+numbers = [ 2,4,11,5,20,4,50,7]
 
-numbers = [3, 5, 12 ,34 ,8 ,40 ,57 ,2 ,7 ,36]
+empty = []
 
-empty=[]
-
-for element in numbers:
+for element in numbers: 
     if element < 10:
-       empty.append(element)
+        empty.append(element)
 print(empty)

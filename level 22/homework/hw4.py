@@ -1,24 +1,22 @@
 # 4) შექმენით 3 ცრილი სამივე იქნება განსხვავებული მონაცემთა ტიპიები  | ბოლეანი არა საჭირო | და შექმენით ცარიელი ცხრილი სადაც იქნება დასაწყისში ინტეჯერების ცხრილი  სტრინგების ცხრილი და მერე ფლოათების ცხრილი
 
-integer = [12 , 3, 54 ,7 ,11]
+intg = [2, 40, 50 ,3 , 55]
 
-flout = [12.5 ,23.45, 15.60 , 50.75, ]
+flt = [1.5, 5.50 , 60.40 , 5.5 , 6.9]
 
-st = ["giorgi","lasha" ,"manqana", "goa"]
+strng = ["giorgi", "lasha", "beqa" ,"giorgi", "irakli"]
 
 empty = []
 
-for element in integer:
+for element in intg:
     if type(element) == int:
         empty.append(element)
-print(empty)
-
-for element in flout:
-    if type(element) == float:
-        empty.append(element)
-print(empty)
-
-for element in st:
+    
+for element in strng:
     if type(element) == str:
         empty.append(element)
-print(empty) 
+    
+for element in flt:
+    if type(element) == float :
+        empty.append(element)
+print(empty)
