@@ -1,8 +1,13 @@
-# )Print the squares of numbers from 1 to 15.
+# 6)შეამოწმეთ შეყვანილი სიტყვა hello-ა თუ hello world.
+
+word = input("enter word : ")
 
 
+if word == "hello":
+    print("es aris hello")
 
-for i in range(1, 16):
+elif word == "hello world":   
+    print("aq aris sheyvanili hello world")
 
-    print(i * i)
-   
+elif word != "hello" or word != "hello world":   
+    print("is not said")

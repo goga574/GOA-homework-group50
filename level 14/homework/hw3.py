@@ -1,5 +1,10 @@
-# დაპტინტეთ 0-იდან 100-ის ჩათვლით ლუწი რიცხვები
+# 4)გამოიყენეთ or  რათა გაიგოთ  თუ ცხოველი არის , კატა თუ თაგვი.
 
-for i in range(101):
-    if i % 2 == 0:
-        print(i)
+
+animal = input("enter mouse or cat")
+
+if animal == "cet" or  animal == "mouse":
+    print("es aris kata an tagvi")
+
+elif animal != "cet" or animal != "mouse":
+    print("ar aris cxoveli")

@@ -1,4 +1,12 @@
-# დაპრინტეთ პირველი 10 ნატურალური რიცხვი
+# 3)შეამოწმეთ, არის თუ არა მოცემული ციფრი დადებითი ან ნული, თუმცა არ არის უარყოფითი.
 
-for i in range(11):
-    print(i)
+
+
+num = int(input("enter number: "))
+
+
+if num >= 0:
+    print("es ricxvi aris dadebiti an nuli")
+
+elif num < 0:
+    print("es ricxvi aris uaryofiti")   

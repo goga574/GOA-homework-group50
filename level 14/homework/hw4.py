@@ -1,7 +1,12 @@
-# )Write a program that calculates and prints the sum of numbers from 1 to 10 using a for loop.
+# 5) შეამოწმეთ, თუ ერთ-ერთი ციფრი უფრო დიდია 10-ზე ან მეორე ციფრი ნაკლებია 50-ზე
 
-sum = 0
 
-for i in range(11):
-    sum = sum + i
-print(sum)
+num = int(input("enter your number: "))
+
+
+
+if num > 10 and num < 50:
+    print("ეს რიცხვი მეტია 10 ზე და ნაკლებია 50-ზე ")
+
+elif num < 10 or num > 50:
+    print("ეს რიცხვი არ არის 10ზე მეტი და 50 ზე ნაკლები")    

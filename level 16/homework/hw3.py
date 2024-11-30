@@ -1,11 +1,13 @@
-# დაბეჭდეთ 1 დან 50 მდე მხოლოდ კენტი რიცხვები if else ის გამოყენების გარეშე
+# 3) შეადარეთ თქვენი ასაკი მომხმარებლის შემოტანილ ასაკს, თუ თქვენი ასაკი მეტია  მომხმარებლის ასაკზე უთხარით რომ თქვენ მასზე დიდი ხართ, თუ მასზე პატარა ხართ დაუპრინტეთ რომ მასზე პატარა ხართ და სხვა  შემთხვევაში დაუპრინტეთ რომ ტოლები ხართ.
 
-i = 1 
-while i < 50:
+age = int(input("enter your age:"))
 
-    print(i)
+my_age = 19
 
-    i += 2
 
-# for i in range( 0, 50 ,2):
-#     print(i)
+if my_age > age:
+    print("i am older then you")
+elif my_age < age:
+    print("im younger then you")
+else :
+    print("we have same age")
