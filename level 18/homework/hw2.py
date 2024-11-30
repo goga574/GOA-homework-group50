@@ -6,5 +6,5 @@ while i < 20:
     print(i)
     i += 2
 
-# for i in range(2,2,2):
+# for i in range(2,20,2):
 #     print(i)

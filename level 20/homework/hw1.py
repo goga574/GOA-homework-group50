@@ -6,6 +6,11 @@ list1 = ["goga", "giorgi","saba", "qetevani", 25 , 34.65, "beqa", 533, "goa" ,"g
 for i in range(15):
     print(list1[i])
 
+# i = 0
+
+# while i < 15:
+#     print(list1[i])
+#     i += 1
 
 
 

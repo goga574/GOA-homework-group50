@@ -1,9 +1,12 @@
 #1 დან 50 მდე დაბეჭდეთ რიცხვების საშუალო არითმეტილული
 
-
-num = 0
+sum = 0
 
 for i in range(1,50):
-    num=num + i
+    sum += i
+print(sum//50)
 
-print(num // 50)
+
+
+
+

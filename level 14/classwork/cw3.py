@@ -1,11 +1,10 @@
 #მომხმარებელს შემოატანინეთ რიცხვი შემდეგ კი მომხმარებლის შემოტანილ რიცხვამდე დაბეჭდეთ ყველა რიცხვის საშუალო არითეტიკული
 
+num = int(input("enter your number:"))
 
-num1 = int(input("enter number:"))
+sum = 0
 
+for i in range(1,num+1):
+    sum += i
+print(sum // num)
 
-num2 = 0
-
-for i in range(1,(num1 + 1)):
-    num2 += i
-print(num2 // num1)

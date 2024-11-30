@@ -1,7 +1,7 @@
 #მომხმარებელს შემოატანინეთ რიცხვი შემდეგ მომხმარებლის შემოტანილ რიცხვამდე დაბეჭდეთ ყველა ლუწი რიცხვი
 
-num = int(input("enter number:"))
+num = int(input("enter num:"))
 
 for i in range(num):
-    if i %2 ==0:
+    if i % 2==0:
         print(i)

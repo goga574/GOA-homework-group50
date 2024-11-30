@@ -4,6 +4,6 @@
 name = input("enter your name:")
 
 while name != "gabrieli":
-    print(input("enter your name correct:"))
+    name=input("enter your name correct:")
 
 print("welcome" , name)
