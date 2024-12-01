@@ -2,6 +2,9 @@
 
 name = ["giorgi","gia","lasha", "ia","beqa"]
 
-name.index("giorgi")
+print(name.index("giorgi"))   #giorgi დგას მენულე ინდექსზე
 
-print(name.index("ia"))
+
+print(name.index("lasha"))  #lasha დგას მეორე ინდექსზე
+
+print(name[3])    #მესამე ინდექსზე დგას ia

@@ -6,6 +6,7 @@ even = 0
 
 odd = 0
 
+
 for i in list:
     if i % 2 == 0:
         even += i

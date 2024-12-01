@@ -6,7 +6,13 @@ while i < 20:
     print(i)
     i += 2
 
-#ან
+# or ---------------------------
 
 # for i in range(10,20,2):
 #     print(i)
+
+#or -----------------------------
+
+# for i in range(10,20):
+#     if i % 2 == 0:
+#         print(i)

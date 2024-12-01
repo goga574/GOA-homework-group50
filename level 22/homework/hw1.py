@@ -4,9 +4,9 @@ name = ["tea","giorgi","gia","lasha", "ia"]
 
 empty = []
 
-for element in name:
-    if len(element) < 4:
-        empty.append(element)
-print(empty)
 
+for i in name:
+    if len(i) < 4:
+        empty.append(i)
+print(empty)
 

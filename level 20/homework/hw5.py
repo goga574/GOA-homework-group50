@@ -5,7 +5,3 @@ list = ["beqa", 15 , "lasha", 40.5, "irakli", "soso", 40, True]
 for i in list:
     if type(i) == str:
         print(i)
-
-
-
-

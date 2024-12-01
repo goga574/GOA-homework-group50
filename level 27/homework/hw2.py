@@ -4,6 +4,8 @@
 
 sum = int(input("enter number:"))
 
-for i in range(sum):
-    sum += i
-print(sum)
+jami = 0
+
+for i in range(sum+1):
+    jami += i
+print(jami)

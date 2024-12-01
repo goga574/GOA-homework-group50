@@ -11,12 +11,12 @@ empty = []
 for element in intg:
     if type(element) == int:
         empty.append(element)
-    
+
 for element in strng:
     if type(element) == str:
         empty.append(element)
-    
+
 for element in flt:
-    if type(element) == float :
+    if type(element) == float:
         empty.append(element)
 print(empty)

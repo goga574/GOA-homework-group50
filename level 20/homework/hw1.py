@@ -3,17 +3,13 @@
 
 list1 = ["goga", "giorgi","saba", "qetevani", 25 , 34.65, "beqa", 533, "goa" ,"gabrieli", 34.50, 98, "mariami", "irakli", 300] 
 
-for i in range(15):
+# for i in list1:
+
+#     print(i)
+
+i = 0
+
+while i < 15:
     print(list1[i])
 
-# i = 0
-
-# while i < 15:
-#     print(list1[i])
-#     i += 1
-
-
-
-
-
-   
+    i += 1
