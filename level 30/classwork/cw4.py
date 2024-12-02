@@ -6,3 +6,4 @@ def name(name):
 
 print(name("goga"))
 print(name("gio"))
+print(name("lasha"))

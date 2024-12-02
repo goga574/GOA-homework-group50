@@ -4,50 +4,31 @@ number1 = int(input("enter first number:"))
 
 number2 = int(input("enter second number:"))
 
-def numbers(num1,num2):
 
-    return num1 + num2
-
-print(numbers(number1,number2))
-
-
-
-#----------------------------------------------
-
-
-number1 = int(input("enter first number:"))
-
-number2 = int(input("enter second number:"))
-
-def numbers(num1,num2):
+def minus(num1, num2):
 
     return num1 - num2
 
-print(numbers(number1,number2))
+print(minus(number1, number2))
 
+# #---------------------------------------------
+
+def plus(num1, num2):
+
+    return num1 + num2
+print(plus(number1, number2))
 
 #----------------------------------------------
 
-
-number1 = int(input("enter first number:"))
-
-number2 = int(input("enter second number:"))
-
-def numbers(num1,num2):
-
+def multiply(num1 , num2):
+    
     return num1 * num2
 
-print(numbers(number1,number2))
+print(multiply(number1, number2))
 
+#-----------------------------------------------
 
-#----------------------------------------------
+def divide(num1, num2):
 
-number1 = int(input("enter first number:"))
-
-number2 = int(input("enter second number:"))
-
-def numbers(num1,num2):
-
-    return num1 / num2
-
-print(numbers(number1,number2))
+    return num1/num2
+print(divide(number1,number2))

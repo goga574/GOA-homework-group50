@@ -13,6 +13,8 @@ def square():
 
 square()
 square()
+square()
+square()
 
 
 exitonclick()
