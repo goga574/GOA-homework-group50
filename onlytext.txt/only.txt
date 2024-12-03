@@ -167,3 +167,8 @@ inheritance- მემკვიდრეობა / მშობელი თე
 
 seo - search engine optimization - საძიებო სისტემის ოპტიმიზაცია
 
+
+simple page application - ერთ გვერდიანი  აპლიკაცია
+
+multiple page application - მრავალ გვერდიანი აპლიკაცია
+
