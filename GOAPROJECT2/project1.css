@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+div{
+    background-color: rgb(18, 13, 13);
+    color: goldenrod;
+    display: flex;
+    gap: 10px;
+    padding-top: 25px;
+    img{
+        padding-bottom: 30px;
+        border-radius: 100px;
+    }
+    h2{
+        margin-top: 20px;
+    }
+}
+
+main{
+    background-image:url(./images/misagebi.jpg);
+
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 600px;
+}
+section{
+
+    background-color: rgb(18, 13, 13);
+    color: goldenrod;
+    text-align: center;
+    p{
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+    }
+}
+
+nav ul{
+    width: 100%;
+    background-color: rgb(18, 13, 13);
+    color: goldenrod;
+    display: flex;
+    justify-content:center;
+    padding: 30px;
+    list-style: none;
+    gap: 30px;
+
+    a{
+
+        color: goldenrod;
+    }
+ 
+
+    padding-bottom: 20px;
+}
+
+footer{
+
+    background-color: rgb(81, 80, 80);
+    color: rgb(252, 244, 222);
+
+}
