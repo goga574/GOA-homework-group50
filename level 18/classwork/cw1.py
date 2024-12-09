@@ -2,7 +2,7 @@
 
 name = input("enter your name:")
 
-i = 0 
+
 
 while name != "gabrieli":
     name = input("enter name again:")

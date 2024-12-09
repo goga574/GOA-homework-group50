@@ -1,2 +1,2 @@
-print("no homework and classwork")
+print("no homework")
 
