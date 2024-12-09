@@ -1,1 +1,1 @@
-print("project/noclasswork")
+print("project/no classwork")
