@@ -4,7 +4,12 @@ num1 = [12 ,35 ,68 , 22, 23, 28, 25, 21, 98]
 
 empty = []
 
-for element in num1:
-    if element % 2 == 0 :
-        empty.append(element)
+
+for i in num1:
+    if i %2==0:
+        empty.append(i)
 print(empty)
+
+
+
+

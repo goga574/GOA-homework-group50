@@ -6,7 +6,7 @@ empty =[]
  
 
 for element in names:
-    if element[0] != "t":
+    if element[0] == "t":
         empty.append(element)
 print(empty)
 

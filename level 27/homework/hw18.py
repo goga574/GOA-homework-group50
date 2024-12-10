@@ -5,7 +5,6 @@ name=["mirika","elizbari","vaniko","ana","rostomi","mariami","ema","natali","tom
 
 
 for element in name:
-    element[0]
     print(element[0])
 
     

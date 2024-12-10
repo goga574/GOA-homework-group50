@@ -6,6 +6,6 @@ sum = int(input("enter number:"))
 
 jami = 0
 
-for i in range(sum+1):
+for i in range(sum):
     jami += i
 print(jami)
