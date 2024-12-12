@@ -1,39 +1,57 @@
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family:cursive;
 }
 
+body{
+    background-color: rgb(18, 13, 13);
+}
 
 div{
     background-color: rgb(18, 13, 13);
-    color: goldenrod;
+    color: rgb(158, 117, 14);
     display: flex;
     gap: 10px;
     padding-top: 25px;
     img{
-        padding-bottom: 30px;
+        padding-left: 20px;
+        padding-bottom: 10px;
         border-radius: 100px;
     }
     h2{
+        font-weight: lighter;
         margin-top: 20px;
     }
 }
 
 main{
-    background-image:url(./images/misagebi.jpg);
-
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
+ 
+    border-radius: 24px;
+    width: 50%;
     height: 600px;
 }
+
+.zangi-foto{
+    border-radius: 24px;
+    width: 100%;
+}
+
+.main-container{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 section{
 
     background-color: rgb(18, 13, 13);
-    color: goldenrod;
+    color: rgb(158, 117, 14);
     text-align: center;
     p{
+        font-style: italic;
         padding-left: 20px;
         padding-bottom: 20px;
         padding-right: 20px;
@@ -43,16 +61,23 @@ section{
 nav ul{
     width: 100%;
     background-color: rgb(18, 13, 13);
-    color: goldenrod;
     display: flex;
     justify-content:center;
     padding: 30px;
     list-style: none;
+    font-style: italic;
     gap: 30px;
-
+    
     a{
+         
+        color:rgb(158, 117, 14);
+            text-decoration: none; 
+            padding: 10px 20px;  
+            transition: color 0.3s;
+    }
 
-        color: goldenrod;
+    a:hover {
+        color: #5151e1; 
     }
  
 
@@ -60,7 +85,6 @@ nav ul{
 }
 
 footer{
-
     background-color: rgb(81, 80, 80);
     color: rgb(252, 244, 222);
 

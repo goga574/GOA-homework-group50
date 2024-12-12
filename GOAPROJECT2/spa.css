@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:cursive;
+} 
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section p{
+    margin-top: 30px;
+}
+
+div {
+    background-color: rgb(18, 13, 13);
+    color: rgb(158, 117, 14);
+    display: flex;
+    gap: 10px;
+    padding-top: 25px;
+
+    div img {
+        padding-left: 20px;
+        padding-bottom: 10px;
+        border-radius: 100px;
+    }
+
+    h2 {
+        font-weight: lighter;
+        margin-top: 20px;
+    }
+}
+
+.ertaderti-div{ 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+nav ul {
+    width: 100%;
+    background-color: rgb(18, 13, 13);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    list-style: none;
+    font-style: italic;
+    gap: 30px;
+
+    a {
+
+        color: rgb(158, 117, 14);
+
+        text-decoration: none;
+
+        padding: 10px 20px;
+
+        transition: color 0.3s;
+    }
+
+    a:hover {
+        color: #5151e1;
+    }
+}
+
+section {
+
+    background-color: rgb(18, 13, 13);
+    color: rgb(158, 117, 14);
+    text-align: center;
+
+    p {
+        font-style: italic;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+    }
+}
+
+body {
+    background-color: rgb(18, 13, 13);
+    ;
+}
+
+.my-image {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+footer {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    background-color: rgb(18, 13, 13);
+    color: rgb(158, 117, 14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lounge {
+    justify-content: center;
+}
+
+.no img {
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+.ertaderti-img {
+    width: 60%;
+    border-radius: 24px;
+}
+
+p{
+    width: 50%;
+    text-align: center;
+}
+
+.sofia-pingvini{
+    border-radius: 24px;
+}
