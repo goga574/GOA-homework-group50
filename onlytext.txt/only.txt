@@ -226,4 +226,6 @@ external ცალკე ფაილში ვწერთ css კოდს მ
 
 style inheritance - სტილების მემკვიდრეობა
 
+pixel px საზომი ერთეული
 
+responsive - rodesac yvelanair mowyobilobas ergeba saiti
