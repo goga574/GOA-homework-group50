@@ -229,3 +229,20 @@ style inheritance - სტილების მემკვიდრეობ�
 pixel px საზომი ერთეული
 
 responsive - rodesac yvelanair mowyobilobas ergeba saiti
+=================================
+
+
+text decoration
+
+
+    decoration types:
+        underline - ხაზი ქვეშ
+        overline - ხაზი ზემოთ
+        line-throuht - ხაზი შუაში
+
+    decoration styles:
+        wavy - ტალღოვანი
+        solid - სწორი ხაზი
+        dashed - წყვეტილი ხაზები
+        dotted - წერტილები
+        double - ორი ხაზი
