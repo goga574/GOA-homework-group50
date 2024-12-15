@@ -1,0 +1,29 @@
+.qvesh{
+
+    text-decoration: underline blue;
+
+}
+
+.magla{
+
+    text-decoration: overline red;
+    color: brown;
+}
+
+.shuashi{
+
+    text-decoration: line-through green;
+    color: aqua;
+}
+
+.qvesh_magla{
+
+    text-decoration: underline  overline blue;
+    color: chartreuse;
+}
+
+.magla_shuashi{
+
+    text-decoration: overline line-through greenyellow;
+    color: aqua;
+}

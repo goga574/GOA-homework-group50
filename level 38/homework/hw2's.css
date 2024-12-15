@@ -1,0 +1,19 @@
+.parent-div{
+
+    width: 1000px; 
+    height: 700px;
+    background-color: darkblue;
+   
+
+}
+
+
+.child-div{
+
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+
+
+
+}
