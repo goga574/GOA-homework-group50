@@ -1,0 +1,23 @@
+button{
+    background-color: rgb(48, 53, 45);
+    color: rgb(201, 74, 74);
+    width: 100px;
+    border: 3px red solid;
+}
+
+button:hover{
+    background-color: rgb(18, 18, 140);
+    color: gold;
+    width: 150px;
+    border: 6px greenyellow dashed;
+    border-radius: 15px;
+}
+
+button:active{
+    font-size: 25px;
+    height: 60px;
+    background-color: chartreuse;
+    color: brown;
+    border: 5px dotted goldenrod;
+    border-radius: 20px;
+}
