@@ -1,0 +1,9 @@
+input{
+    padding: 15px;
+    border-radius: 20px;
+}
+input::placeholder{
+    text-align: center;
+    color: red;
+}
+
