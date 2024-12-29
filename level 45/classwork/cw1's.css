@@ -1,0 +1,9 @@
+ul{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    justify-content: center;
+}
+li{
+    flex-basis:100px;
+}
