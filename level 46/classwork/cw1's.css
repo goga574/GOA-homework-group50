@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 80px;
+    background-color: gray;
+    padding: 0px 20px ;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+
+}
+
+
+
+ul{
+    padding-left: 100px;
+    font-size: 1.2rem;
+    justify-content:end ;
+    gap: 40px;
+    display:flex;
+    font-family: cursive;
+    color: greenyellow;
+
+}
+
+h1{
+    font-family: sans-serif;
+    color: rgb(255, 0, 0);
+}
+
+.material{
+    padding-right:2000px ;
+}
+
