@@ -2,6 +2,5 @@ div{
     height: 100px;
     width: 100px;
     background-color: red;
-    transform: translateX(20px);
-    transform: translateY(10px);
+    transform: translate(20px , 10px);
 }
