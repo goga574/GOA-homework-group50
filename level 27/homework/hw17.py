@@ -5,5 +5,4 @@ names = ["giorgi","aleqsandre", "qetevani","bagrati","mayvala"]
 
 
 for element in names:
-        names.index(element)
         print(len(element))

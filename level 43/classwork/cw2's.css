@@ -29,7 +29,8 @@ input[type="email"]:hover{
     
     transition: 0.5s;
     border-bottom: solid green 6px;
-    border:none
+    border:none;
+    background-color: blue;
 
     
     

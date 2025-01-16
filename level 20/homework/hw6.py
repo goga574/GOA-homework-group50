@@ -2,7 +2,6 @@
 
 list = [12, 40, 8 , 20 ,10 ,10]
 
-
 sum = 0
 
 for i in list:

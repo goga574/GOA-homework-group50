@@ -2,7 +2,7 @@
 
 def name(name1):
 
-    return "hello"+ name1
+    return f"hello {name1}"
 
 print(name("goga"))
 print(name("gio"))
