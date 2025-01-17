@@ -1,0 +1,30 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    overflow-y: hidden;
+}
+
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 100%;
+    animation-name: jumpingBall;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transform: translateY();
+}
+
+
+@keyframes jumpingBall{
+    from{
+    
+    }
+
+    to{
+        transform: translateY(500px);
+    }
+}

@@ -2,23 +2,25 @@ body{
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
+    overflow-y: hidden;
 }
 
-div{
-    background-color: red;
-    width: 200px;
-    height: 200px;
+
+h1{
+    color: purple;
     animation-name: changeColor;
     animation-duration: 2s;
+    animation-iteration-count: infinite;
+
 }
 
 @keyframes changeColor{
     from{
-        background-color: red;
+
     }
 
     to{
-        background-color: blue;
+        color: rgb(0, 240, 236);
     }
 }
