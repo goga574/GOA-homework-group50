@@ -17,7 +17,7 @@ h1{
 
 @keyframes changeColor{
     from{
-
+        color: rgb(0, 240, 236);
     }
 
     to{

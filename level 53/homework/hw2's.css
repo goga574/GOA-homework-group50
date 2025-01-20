@@ -15,13 +15,14 @@ div{
     animation-name: jumpingBall;
     animation-duration: 1s;
     animation-iteration-count: infinite;
-    transform: translateY();
+    /* transform: translateY(); */
+    animation-timing-function: ease-in;
 }
 
 
 @keyframes jumpingBall{
     from{
-    
+        transform: translateY(0);
     }
 
     to{
