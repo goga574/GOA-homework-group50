@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.parent{
+    width: 90%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: minmax(80px,20%) minmax(80px,20%) minmax(80px,20%) minmax(80px,20%) ;
+    grid-template-rows:minmax(60px,20%) minmax(60px,20%) minmax(60px,20%) minmax(60px,20%) ;
+    gap: 10px;
+}
+
+.parent div{
+   background-color: red;
+}
