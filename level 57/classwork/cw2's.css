@@ -1,21 +1,27 @@
 body {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    display: grid;
+    background-color: black;
 }
 
 
 .parent {
     display: grid;
-    grid-template-columns:repeat(2, 1fr);
-    grid-template-rows:200px 200px;
+    grid-template-columns:repeat(auto-fill,minmax(300px,20%));
+    grid-template-rows: 100px 100px 100px 100px;
     gap: 20px;
+    justify-content: center;
+    align-content: center;
 }
 
 
 
 .parent div {
+    /* width: 100%; */
     background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
     
 }

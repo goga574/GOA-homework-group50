@@ -19,7 +19,7 @@ body {
 section {
     display: grid;
     grid-template-columns: 365px 365px;
-    grid-template-rows: 195px 240px;
+    /* grid-template-rows: 195px 240px; */
     background-color: hsl(202, 25%, 94%);
     /* width: 50%; */
     border-radius: 10px;
@@ -29,16 +29,23 @@ section {
 
 @media (max-width:700px){
     section{
-        grid-template-columns: 365px;
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+    .firstdiv{
+        grid-column: 1/2;
     }
 
+    .thirddiv{
+        grid-column: 1/2;
+    }
 }
 
 
 
 .thirddiv {
     padding: 30px 30px;
-    grid-area: 2/2;
+    /* grid-area: 2/2; */
     color:hsl(204, 43%, 93%); 
     background-color:hsl(179, 62%, 43%) ;
 }
