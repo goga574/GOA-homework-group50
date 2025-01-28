@@ -1,19 +1,21 @@
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.parent{
-    width: 90%;
-    height: 500px;
+
+.parent {
     display: grid;
-    grid-template-columns: minmax(80px,20%) minmax(80px,20%) minmax(80px,20%) minmax(80px,20%) ;
-    grid-template-rows:minmax(60px,20%) minmax(60px,20%) minmax(60px,20%) minmax(60px,20%) ;
-    gap: 10px;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:200px 200px;
+    gap: 20px;
 }
 
-.parent div{
-   background-color: red;
+
+
+.parent div {
+    background-color: red;
+    
 }

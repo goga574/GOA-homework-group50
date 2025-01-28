@@ -22,9 +22,13 @@ section{
     justify-content: start;
     align-items: start;
 }
+
+
 img{
     width: 20rem;
 }
+
+
 
 .text-container{
     display: flex;

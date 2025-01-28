@@ -2,12 +2,13 @@
 
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: hsl(212, 45%, 89%);
     height: 100vh;
     display: flex;
@@ -17,8 +18,8 @@ body{
     font-family: "Outfit", serif;
     font-weight: 700;
 }
-div{
-   
+
+div {
     background-color: hsl(0, 0%, 100%);
     padding: 12px;
     border-radius: 20px;
@@ -30,12 +31,12 @@ div{
     text-align: center;
 }
 
-div img{
-   width: 300px;
-   border-radius: 15px;
+div img {
+    width: 300px;
+    border-radius: 15px;
 }
 
-p{
+p {
     font-size: 15px;
     font-weight: 400;
     padding-bottom: 20px;

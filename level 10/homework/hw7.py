@@ -3,4 +3,4 @@
 color = input("favourite color:")
 
 
-print("შენი საყვარელი ფერი არის" + " " + color )
+print(f"შენი საყვარელი ფერი არის {color}")
