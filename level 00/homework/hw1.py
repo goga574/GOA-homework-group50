@@ -50,7 +50,6 @@ print(type(is_friendly))
 print(type(can_comunicate_with_people))
 print(type(always_can_do_Nika_s_homeworks))
 
-print("ghsdfhnzdfhbzdfhbzdfbhzdfb")
 
 
 print(name + " " + surname + " " + str(age) + " " + str(height) + " " + live + " " + str(student_of_goa) + " " + str(is_motivated) + " " + str(future_career_programming) + " " + str(has_any_experiance) + " " + str(only_self_educated) + " " + str(wants_to_become_successful_developer) + " " + str(is_lazy) + " " + str(is_competetive) + " " + str(is_fond_of_making_challanges) + " " + str(is_friendly) + " " + str(can_comunicate_with_people) + " " + str(always_can_do_Nika_s_homeworks))
