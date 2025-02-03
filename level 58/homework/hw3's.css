@@ -110,7 +110,7 @@ p{
 @media (max-width:1130px){
     section{
         grid-template-columns:repeat(2,1fr) ;
-        grid-template-rows: repeat(4,1fr);
+        /* grid-template-rows: repeat(4,1fr); */
         margin: 10px 10px;
     }
 }
@@ -120,6 +120,19 @@ p{
     section{
         margin: 10px 10px;
         grid-template-columns: 1fr ;
-        grid-template-rows: 1fr 1fr 1fr 1fr 0.4fr;
+
+        /* grid-template-rows: 1fr 1fr 1fr 1fr 0.4fr; */
+    }
+    .alldiv{
+        grid-column: 1/2;
+    }
+    .third{
+        grid-row: 3/4;
+    }
+    .fourth{
+        grid-row:span 1;
+    }
+    .first{
+        grid-row: span 2;
     }
 } 

@@ -13,7 +13,7 @@ body{
     background-color: hsl(185, 75%, 39%);
     background-image: url;
     overflow: hidden;
-    
+    font-family: "Kumbh Sans", serif;
 }
 
 section{
@@ -25,7 +25,7 @@ section{
     flex-direction: column;
     border-radius: 15px;
     overflow: hidden;
-    font-family: "Kumbh Sans", serif;
+    
 }
 
 

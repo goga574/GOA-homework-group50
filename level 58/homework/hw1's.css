@@ -16,8 +16,11 @@ body {
 
 section {
     display: grid;
+    width: 80%;
     grid-template-rows: 450px;
-    grid-template-columns: repeat(3, minmax(250px, 330px));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 330px));
+    justify-content: center;
+    align-content: center;
 }
 
 
@@ -39,11 +42,7 @@ div {
 }
 
 
-@media (max-width:745px) {
-    section {
-        grid-template-columns: 1fr;
-    }
-}
+
 
 
 h1 {
@@ -109,3 +108,8 @@ button:hover {
     cursor: pointer;
 }
 
+/* @media (max-width:745px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+} */
