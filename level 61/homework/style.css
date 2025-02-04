@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+body{
+    min-height: 400vh;
+}
+.magic-burger{
+    display: none;
+}
+header{
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.headerdiv{
+    display: flex;
+    width: 570px;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerdiv nav ul{
+    list-style-type:none;
+    display: flex;
+    gap: 25px;
+    font-weight: 600;
+}
+.herosec{
+    padding:50px 30px;
+    background-color: rgba(240, 239, 235, 1);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+/* .hero img{
+    border: 1px solid black;
+} */
+.socials{
+    display: flex;
+    gap: 25px;
+}
+.herodiv{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    
+}
+.herodiv h1{
+    font-size: 60px;
+    width: 90%;
+}
+.herodiv p{
+    width: 90%;
+    font-size: 25px;
+}
+.herodiv button{
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    font-size: 17px;
+}
+
+.best-sellers{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    text-align: center;
+    align-items: center;
+}
+.sellers-text{
+    margin-top: 70px;
+    display: flex;
+    width: 650px;
+    flex-direction: column;
+    gap: 60px;
+}
+.sellers-text h1{
+    font-size: 36px;
+}
+.sellers-text p{
+    font-size: 20px;
+    line-height: 24px;
+}
+.sellers-grid h1{
+    font-size: 36px;
+}
+.sellers-grid{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.card-grid{
+    width: 80%;
+    gap: 70px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill,314px);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.card h1{
+    font-size: 17px;
+    width: 150px;
+}
+.card p{
+    font-size: 17px;
+}
+.card b{
+    text-decoration: underline;
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.layout{
+    width: 100%;
+    height: 2000px;
+}
+.first{
+    width: 100%;
+    background-color: #f0f0f0;
+    height: 650px;
+    display: flex;
+}
+
+
+.samicardsec{
+    /* height:100%; */
+    width: 100%;
+    background-color: #CCCCCC99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.samicardsec img{
+    margin: 50px 50px;
+}
+
+
+.samicardsec div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 510px;
+}
+
+
+.samicardsec div h1{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+
+.samicardsec div p{
+    font-size: 36px;
+    font-weight: 400;
+    padding: 30px 0px;
+}
+
+.samicardsec div h6{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+@media (max-width:650px) {
+    .sellers-text{
+        width: 360px;
+    }
+     /* .samicardsec div h1{
+       
+        margin-top: 30px;
+    }  */
+
+}
+@media (max-width:840px) {
+    .card-info{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .card{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    nav{
+        display: none;
+    }
+    .magic-burger{
+        font-size: 1.4rem;
+        display: block;
+    }
+    .head-cont{
+        width: 150px;
+        justify-content: space-between;
+    }
+    header{
+        justify-content: space-between;
+    }
+    .herosec{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .herodiv{
+        width: 100%;
+    }
+    .herodiv h1{
+        font-size: 50px;
+    }
+    .herodiv p{
+        font-size: 20px;
+    }
+    .herosec img{
+        margin-top: 50px;
+    }
+
+    .samicardsec{
+        flex-direction:column;
+        text-align: center;
+    }
+    .samicardsec div h1{
+        font-size: 30px;
+        /* margin-top: 30px; */
+    }
+    .samicardsec div p{
+        font-size: 25px;
+        /* margin-top: 30px; */
+    }
+    .samicardsec div h6{
+        margin-bottom: 20px;
+
+    }
+    .samicardsec img{
+        margin: 30px 20px;
+        width: 300px;
+        height:450px;
+        
+    }
+}
