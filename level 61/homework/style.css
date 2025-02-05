@@ -620,11 +620,9 @@ footer {
     .contactseqtion {
         flex-direction: column;
         margin-top: 100px;
+        justify-content: center;
     }
 
-    .footersection {
-        margin-top: 40px;
-    }
 }
 
 @media (max-width:840px) {
@@ -633,6 +631,12 @@ footer {
         flex-direction: column;
         gap: 10px;
     }
+    .footersection {
+        margin-top: 40px;
+        justify-content: center;
+        margin-left: 100px;
+    }
+    
 
     .card {
         display: flex;
@@ -763,8 +767,9 @@ footer {
         grid-template-rows: repeat(3, 700px);
     }
 
-    .lastsection {
-        height: 2;
+    .lastsection{
+        background-color: white;
+        box-shadow: 0px 0px 0px white;
     }
 
     .formsection {
@@ -795,6 +800,7 @@ footer {
         align-items: start;
         margin-top: -700px;
         height: 600px;
+        text-align: center;
     }
 
     .contactseqtion {
