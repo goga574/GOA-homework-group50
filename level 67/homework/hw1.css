@@ -438,18 +438,15 @@ nav ul {
     .clients-text p{
         font-size: 10px;
     }
-
     .clients-grid-container{
         gap: 50px;
     }
     .layout_text h3{
         font-size:15px;
         line-height: 22px;
-
     }
     .layout_text p{
         font-size:10px;
-        
     }
     .layout_grid div h4{
         font-size: 13px;
@@ -488,16 +485,13 @@ nav ul {
         color: #4D4D4D;
         font-weight: 600;
         font-size: 15px;
-        line-height: 14.63px;
-       
+        line-height: 14.63px;  
     }
-    
     .help-div p {
         color: #18191F;
         font-size: 9px;
         line-height: 10.71px;
         font-weight:400 ;
-        
     }
     .member-div{
         grid-template-columns: 235px;
@@ -522,12 +516,10 @@ nav ul {
     header{
         gap: 10px;
     }
-
     .nav-bar button{
         padding: 7px 10px;
         font-size: 7px;
     }
-
     .hero-text button{
         padding: 5px 20px;
         font-size: 10px;
