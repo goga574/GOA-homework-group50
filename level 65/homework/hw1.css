@@ -294,16 +294,17 @@ nav ul {
     background-color: #F5F7FA;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 44.55px 100.23px;
+    justify-content: center;
+    gap: 150px;
+    padding: 44.55px 130.23px;
 
 }
 
 
 .help-div{
-    width: 50%;
+    width: 270px;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     flex-direction: column;
     gap: 5.57px;
@@ -333,7 +334,7 @@ nav ul {
     grid-template-columns: repeat(2,177.5px);
     /* row-gap: 27.84px; */
     gap: 25px;
-    justify-items:center;
+    justify-items:start;
 }
 .griddivi{
     display: flex;
@@ -390,6 +391,7 @@ nav ul {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 30px;
 
     }
     .learn_more div{
@@ -401,6 +403,15 @@ nav ul {
         grid-template-rows: repeat(3,1fr);
     }
 
+    .help-section{
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        padding:auto;
+        gap: 100px;
+    }
+   
+    
 }
 
 @media (max-width:606px){
@@ -429,7 +440,7 @@ nav ul {
     }
 
     .clients-grid-container{
-        gap: 20px;
+        gap: 50px;
     }
     .layout_text h3{
         font-size:15px;
@@ -461,7 +472,70 @@ nav ul {
         line-height: 13px;
         width: 100%;
     }
+    .column-div h1{
+        font-size: 15.39px;
+        font-weight: 700;
+        line-height: 25.06px;
+        color:#4D4D4D ;
+    }
+    .column-div p {
+        font-weight: 400;
+        font-size: 7.14px;
+        line-height: 16.71px;
+        color: #717171;
+    }
+    .help-div h1{
+        color: #4D4D4D;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 14.63px;
+       
+    }
     
+    .help-div p {
+        color: #18191F;
+        font-size: 9px;
+        line-height: 10.71px;
+        font-weight:400 ;
+        
+    }
+    .member-div{
+        grid-template-columns: 235px;
+        grid-template-rows: repeat(4,43px);
+        justify-items: start;
+        width: 80%;
+    }
+    .help-section{
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        padding:auto;
+    }
+    .help-div{
+        width:100%;
+        text-align: center;
+        align-items: center;
+    }
+    .member-div h1{
+        font-size: 13px;
+    }
+    header{
+        gap: 10px;
+    }
+
+    .nav-bar button{
+        padding: 7px 10px;
+        font-size: 7px;
+    }
+
+    .hero-text button{
+        padding: 5px 20px;
+        font-size: 10px;
+    }
+    .learn_more div button{
+        padding: 5px 16px;
+        font-size: 8px;
+    }
 }
 
 
