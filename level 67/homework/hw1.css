@@ -167,14 +167,14 @@ nav ul {
 }
 
 .clients-grid-container {
-    width: 70%;
+    width: 75%;
     display: grid;
     grid-template-columns: repeat(auto-fill, 118px);
     align-items: center;
     justify-items: center;
     justify-content: center;
     align-content: center;
-    gap: 10px;
+    gap: 20px;
     padding: 20px;
 }
 
@@ -252,7 +252,7 @@ nav ul {
     padding: 0px 100.23px;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 100px;
 }
 
 .learn_more div{
@@ -363,10 +363,55 @@ nav ul {
     color: #717171;
 }
 
+.tesla-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background-color: #F5F7FA;
+    padding: 20px 0px;
+}
 
+.teslatxt-{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 22.27px;
+}
 
+.teslatxt- p{
+    /* padding-top: 10px; */
+    font-size: 11.14px;
+    line-height: 16.71px;
+    font-weight: 500;
+    color: #717171;
+}
+.teslatxt- h5{
+    color: #4CAF4F;
+    font-size: 13.92px;
+    line-height: 13.39px;
+    font-weight: 600;
+}
+.teslatxt- span{
+    color: #89939E;
+    font-weight: 400;
+    font-size: 11.14px;
+    line-height: 16.71px;
+}
 
-
+.gridisdivi{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    column-gap: 22.27px;
+}
+.gridisdivi h6{
+    font-size: 13.92px;
+    font-weight: 600;
+    line-height: 19.49px;
+}
 
 
 
