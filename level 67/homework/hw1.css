@@ -380,6 +380,7 @@ nav ul {
     align-items: start;
     justify-content: center;
     gap: 22.27px;
+    padding: 20px 0px;
 }
 
 .teslatxt- p{
@@ -402,16 +403,82 @@ nav ul {
     line-height: 16.71px;
 }
 
-.gridisdivi{
+/* .gridisdivi{
     display: grid;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 2.5fr;
+    align-items: center;
+    justify-items: center;
     column-gap: 22.27px;
+     */
+/* } */
+
+.gridisdivi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 29px;
 }
 .gridisdivi h6{
     font-size: 13.92px;
     font-weight: 600;
     line-height: 19.49px;
 }
+
+
+
+.arrow2div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.arrow2div  h6{
+    color: #4CAF4F;
+}
+
+
+@media (max-width:855px){
+    .help-div h1{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .help-div{
+        width: 300px;
+    }
+    .help-section{
+        gap: 10%;
+    }
+
+    .learn_more div h5{
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .learn_more div p{
+        font-size: 10px;
+    }
+
+    .tesla-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .teslatxt-{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        width: 70%;
+    }
+
+    
+}
+
+
+
+
+
 
 
 
@@ -455,7 +522,18 @@ nav ul {
         padding:auto;
         gap: 100px;
     }
-   
+
+   .gridisdivi{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+   }
+   .arrow2div h6{
+    line-height: 13px;
+    text-align: left;
+}
     
 }
 
@@ -502,8 +580,8 @@ nav ul {
     }
 
     .learn_more img{
-        width: 270px;
-        height: 264px;
+        width: 250px;
+        height: 244px;
     }
     .learn_more  div h5{
         font-size: 12px;
@@ -541,14 +619,16 @@ nav ul {
     .member-div{
         grid-template-columns: 235px;
         grid-template-rows: repeat(4,43px);
-        justify-items: start;
+        justify-items: center;
         width: 80%;
+        justify-content: center;
+        align-items: center;
     }
     .help-section{
         flex-direction: column;
-        align-items: start;
+        align-items: center;
         justify-content: center;
-        padding:auto;
+        /* padding:auto; */
     }
     .help-div{
         width:100%;
@@ -572,8 +652,29 @@ nav ul {
     .learn_more div button{
         padding: 5px 16px;
         font-size: 8px;
+ 
+    }
+
+    .gridisdivi{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .arrow2div h6{
+        font-size: 10px;
+        text-align: left;
+    }
+
+    .teslaimg{
+        width: 180px;
+    }
+    .teslatxt- p{
+        font-size: 10px;
     }
 }
+
 
 
 
