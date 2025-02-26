@@ -13,7 +13,7 @@ body {
 }
 
 .magic-burger{
-    display: none;
+    display: none !important;
 }
 header {
     width: 100%;
