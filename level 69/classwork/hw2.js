@@ -11,11 +11,11 @@ while(i<userNumber){
     else if(userChoice == "kvadrati"){
         console.log(i**2)
     }
-    else if(i%3==0 && userChoice =="samisjeradi"){
+    else if(i%3==0 &&  userChoice =="samisjeradi"){
         console.log(i)
     }
     else{
         break
     }
-i++
+i+=1
 }
