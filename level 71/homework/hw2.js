@@ -9,7 +9,7 @@ for(let i = 1;i<myArr.length;i++){
     if(myArr[i]<min){
         min = myArr[i]
     }
-    else if(myArr[i]>max){
+    if(myArr[i]>max){
         max = myArr[i]
     }
 }
