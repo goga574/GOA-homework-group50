@@ -1,4 +1,5 @@
-my_name = "gabrieli"
-#snake case
+# my_name = "gabrieli"
+# #snake case
 
-print(my_name)
+# print(my_name)
+

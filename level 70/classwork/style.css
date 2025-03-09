@@ -214,7 +214,235 @@ nav ul li {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 50px;
+    padding: 50px 0px;
 }
+.colordiv{
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.d1{
+    /* border: 1px solid red; */
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    gap:20px ;
+    border-radius: 10px;
+}
+.but{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+}
+.blue{
+    background-color: #5046C7;
+    
+}
+.orange{
+    background-color: #FF6645;
+}
+.lightblue{
+    background-color: #81D9F8;
+}
+.d1 h2{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 100%;
+    color: #233443;
+}
+.d1 p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color:#333333 ;
+}
+
+
+
+.learnmore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+ 
+}
+.learnmore p{
+    color: #FF6645;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.buttomlinkdiv{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.buttomlinkdiv button{
+    width: 274px;
+    height: 54px;
+    border: none;
+    background-color:#003478 ;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+}
+.buttomlinkdiv p{
+    font-size: 400;
+    font-size: 18px;
+    line-height: 100%;
+    text-decoration: underline solid #0276B3;
+    color: #0276B3;
+}
+
+.mainp{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #303231;
+}
+.pricediv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+.pricediv div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 275px;
+    height: 142px;
+    background-color:#f5f5f5;
+    border-radius: 10px;
+    gap: 20px;
+}
+.pricediv div h3{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    color:#233443 ;
+}
+.pricediv div p{
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #333333;
+}
+.motor1 h4{
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 146%;
+    color:#303231 ;
+    width: 70%;
+}
+.motor1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.ekoboost{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+    /* border: 1px solid black; */
+    width: 100%;
+    margin-top: 100px;
+}
+
+.teqsti{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 80px;
+    width: 50%;
+}
+.tichkadiv{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tichkadiv div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+.tichkadiv div button{
+    border-radius: 50%;
+    border: none;
+    width: 25px;
+    height: 25px;
+    background-color: #3d6343;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tichkadiv div p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #333333;
+}
+.teqsti h6{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    color: #303231;
+}
+.teqsti p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #333333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -248,6 +476,35 @@ nav ul li {
     header{
         gap: 50px;
         padding: 20px 40px;
+    }
+   
+    .imgdivi img{
+        width: 400px;
+    }
+    .teqsti{
+        gap: 30px;
+    }
+    .teqsti h6{
+        font-size: 25px;
+    }
+    .teqsti p{
+        font-size: 14px;
+    }
+    .tichkadiv{
+        gap: 20px;
+    }
+    .tichkadiv div p{
+        font-size: 14px;
+    }
+    .tichkadiv div button{
+        width: 20px;
+        height: 20px;
+    }
+    .tichkadiv div button img{
+        width: 10px;
+    }
+    .ekoboost{
+        padding: 0px 30px;
     }
 }
 
@@ -307,6 +564,9 @@ nav ul li {
     .custom p{
         font-size: 30px;
     }
+    .mainp {
+        font-size: 18px;
+    }
 }
 
 
@@ -343,5 +603,76 @@ nav ul li {
 
     .custom p{
         font-size: 20px;
+    }
+    .hero{
+        height: auto;
+    }
+    .mainp {
+        font-size: 10px;
+    }
+
+    .d1{
+        height: 200px;
+        width: 200px;
+    }
+    .d1 button{
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .d1 h2{
+        font-size: 13px;
+    }
+    .d1 p{
+        font-size: 12px;
+    }
+    .learnmore p{
+        font-size: 10px;
+    }
+    .learnmore img{
+        width: 4px;
+    }
+    .buttomlinkdiv button{
+        width: 200px;
+        height: 45px;
+        font-size: 13px;
+    }
+    .buttomlinkdiv p{
+        font-size: 13px;
+    }
+    .custom p{
+        font-size: 15px;
+    }
+    .pricediv{
+        padding: 0;
+    }
+    .pricediv div{
+        width: 200px;
+        height: 100px;
+    }
+    .pricediv div h3{
+        font-size: 12px;
+    }
+    .pricediv div p{
+        font-size: 25px;
+    }
+   
+   
+        
+
+}
+
+@media (max-width:1080px){
+    .pricediv{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    .colordiv{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
     }
 }
