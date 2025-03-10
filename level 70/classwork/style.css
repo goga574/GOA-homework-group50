@@ -186,12 +186,12 @@ nav ul li {
     font-weight: 500;
 }
 
-.fa-bars{
+.fa-bars {
     display: none !important;
 }
 
 
-.custom{
+.custom {
     width: 100%;
     display: flex;
     align-items: center;
@@ -199,7 +199,8 @@ nav ul li {
     background-color: #303231;
     height: 85px;
 }
-.custom p{
+
+.custom p {
     font-weight: 400;
     font-size: 36px;
     line-height: 100%;
@@ -209,7 +210,7 @@ nav ul li {
 
 
 
-.gasafleqsi{
+.gasafleqsi {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,14 +218,16 @@ nav ul li {
     gap: 50px;
     padding: 50px 0px;
 }
-.colordiv{
+
+.colordiv {
     width: 100%;
     /* border: 1px solid black; */
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.d1{
+
+.d1 {
     /* border: 1px solid red; */
     background-color: #F5F5F5;
     display: flex;
@@ -234,56 +237,63 @@ nav ul li {
     text-align: center;
     width: 300px;
     height: 300px;
-    gap:20px ;
+    gap: 20px;
     border-radius: 10px;
 }
-.but{
+
+.but {
     width: 48px;
     height: 48px;
     border-radius: 50%;
     border: none;
     color: #fff;
 }
-.blue{
+
+.blue {
     background-color: #5046C7;
-    
+
 }
-.orange{
+
+.orange {
     background-color: #FF6645;
 }
-.lightblue{
+
+.lightblue {
     background-color: #81D9F8;
 }
-.d1 h2{
+
+.d1 h2 {
     font-size: 18px;
     font-weight: 600;
     line-height: 100%;
     color: #233443;
 }
-.d1 p{
+
+.d1 p {
     font-weight: 400;
     font-size: 18px;
     line-height: 100%;
-    color:#333333 ;
+    color: #333333;
 }
 
 
 
-.learnmore{
+.learnmore {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
- 
+
 }
-.learnmore p{
+
+.learnmore p {
     color: #FF6645;
     font-size: 14px;
     font-weight: 500;
 }
 
 
-.buttomlinkdiv{
+.buttomlinkdiv {
     text-align: center;
     width: 100%;
     display: flex;
@@ -292,17 +302,19 @@ nav ul li {
     flex-direction: column;
     gap: 20px;
 }
-.buttomlinkdiv button{
+
+.buttomlinkdiv button {
     width: 274px;
     height: 54px;
     border: none;
-    background-color:#003478 ;
+    background-color: #003478;
     color: #fff;
     font-size: 18px;
     font-weight: 400;
     line-height: 100%;
 }
-.buttomlinkdiv p{
+
+.buttomlinkdiv p {
     font-size: 400;
     font-size: 18px;
     line-height: 100%;
@@ -310,52 +322,58 @@ nav ul li {
     color: #0276B3;
 }
 
-.mainp{
+.mainp {
     font-size: 24px;
     font-weight: 400;
     line-height: 100%;
     color: #303231;
 }
-.pricediv{
+
+.pricediv {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px 100px;
 }
-.pricediv div{
+
+.pricediv div {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 275px;
     height: 142px;
-    background-color:#f5f5f5;
+    background-color: #f5f5f5;
     border-radius: 10px;
     gap: 20px;
 }
-.pricediv div h3{
+
+.pricediv div h3 {
     font-weight: 600;
     font-size: 18px;
     line-height: 100%;
-    color:#233443 ;
+    color: #233443;
 }
-.pricediv div p{
+
+.pricediv div p {
     font-size: 54px;
     font-weight: 400;
     line-height: 100%;
     color: #333333;
 }
-.motor1 h4{
+
+.motor1 h4 {
     text-align: center;
     margin-top: 50px;
     font-weight: 400;
     font-size: 24px;
     line-height: 146%;
-    color:#303231 ;
+    color: #303231;
     width: 70%;
 }
-.motor1{
+
+.motor1 {
     width: 100%;
     display: flex;
     align-items: center;
@@ -364,7 +382,7 @@ nav ul li {
 }
 
 
-.ekoboost{
+.ekoboost {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -374,7 +392,7 @@ nav ul li {
     margin-top: 100px;
 }
 
-.teqsti{
+.teqsti {
     display: flex;
     align-items: start;
     justify-content: center;
@@ -382,7 +400,8 @@ nav ul li {
     gap: 80px;
     width: 50%;
 }
-.tichkadiv{
+
+.tichkadiv {
     display: flex;
     align-items: start;
     justify-content: center;
@@ -390,13 +409,14 @@ nav ul li {
     gap: 30px;
 }
 
-.tichkadiv div{
+.tichkadiv div {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:20px;
+    gap: 20px;
 }
-.tichkadiv div button{
+
+.tichkadiv div button {
     border-radius: 50%;
     border: none;
     width: 25px;
@@ -406,25 +426,27 @@ nav ul li {
     align-items: center;
     justify-content: center;
 }
-.tichkadiv div p{
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 100%;
-    color: #333333;
-}
-.teqsti h6{
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 100%;
-    color: #303231;
-}
-.teqsti p{
+
+.tichkadiv div p {
     font-weight: 400;
     font-size: 18px;
     line-height: 100%;
     color: #333333;
 }
 
+.teqsti h6 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    color: #303231;
+}
+
+.teqsti p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #333333;
+}
 
 
 
@@ -461,76 +483,90 @@ nav ul li {
     }
 }
 
-@media (max-width:1235px){
-    .navi{
+@media (max-width:1235px) {
+    .navi {
         width: 100%;
         padding: 0px 0px;
     }
-    nav ul li{
+
+    nav ul li {
         font-size: 13px;
     }
-    .button button{
+
+    .button button {
         font-size: 13px;
         padding: 5px 20px;
     }
-    header{
+
+    header {
         gap: 50px;
         padding: 20px 40px;
     }
-   
-    .imgdivi img{
+
+    .imgdivi img {
         width: 400px;
     }
-    .teqsti{
+
+    .teqsti {
         gap: 30px;
     }
-    .teqsti h6{
+
+    .teqsti h6 {
         font-size: 25px;
     }
-    .teqsti p{
+
+    .teqsti p {
         font-size: 14px;
     }
-    .tichkadiv{
+
+    .tichkadiv {
         gap: 20px;
     }
-    .tichkadiv div p{
+
+    .tichkadiv div p {
         font-size: 14px;
     }
-    .tichkadiv div button{
+
+    .tichkadiv div button {
         width: 20px;
         height: 20px;
     }
-    .tichkadiv div button img{
+
+    .tichkadiv div button img {
         width: 10px;
     }
-    .ekoboost{
+
+    .ekoboost {
         padding: 0px 30px;
     }
 }
 
-@media (max-width:860px){
-    nav{
+@media (max-width:860px) {
+    nav {
         display: none;
     }
-    .fa-bars{
+
+    .fa-bars {
         display: block !important;
         font-size: 25px;
     }
-    .navi{
+
+    .navi {
         justify-content: center;
         width: 300px;
         flex-direction: row-reverse;
         gap: 20px;
-        
     }
-    header{
+
+    header {
         padding: 20px 100px;
     }
 
-    .yellowcar{
+    .yellowcar {
         display: none;
     }
-    .fordmustang{
+
+    .fordmustang {
         justify-content: center;
         gap: 10px;
         position: relative;
@@ -538,138 +574,164 @@ nav ul li {
         width: 400px;
         height: 400px;
     }
-    .linediv{
+
+    .linediv {
         display: none;
     }
-    .hero{
+
+    .hero {
         display: flex;
         align-items: center;
         /* justify-content: center; */
         height: auto;
         width: 100%;
-        
     }
-    .fordmustang h2{
+
+    .fordmustang h2 {
         color: black;
         padding-bottom: 0;
         font-size: 20px;
     }
-    .fordmustang h1{
+
+    .fordmustang h1 {
         font: 35px;
         line-height: 50px;
     }
-    .fordmustang h2 span{
+
+    .fordmustang h2 span {
         font-size: 15px;
     }
-    .custom p{
+
+    .custom p {
         font-size: 30px;
     }
+
     .mainp {
         font-size: 18px;
     }
 }
 
 
-@media (max-width:580px){
-    .button{
+@media (max-width:580px) {
+    .button {
         display: none !important;
     }
-    header{
+
+    header {
         padding: 20px 50px;
     }
-    header img{
+
+    header img {
         width: 80px;
     }
-    .navi{
+
+    .navi {
         width: 30px;
     }
-    .fordmustang h1{
+
+    .fordmustang h1 {
         font-size: 35px;
         line-height: 35px;
     }
-    .fordmustang h2{
+
+    .fordmustang h2 {
         font-size: 17px;
     }
-    .bu{
+
+    .bu {
         padding: 15px 25px;
     }
-    .videodiv button img{
-       display: none;
+
+    .videodiv button img {
+        display: none;
 
     }
-    .fordmustang{
+
+    .fordmustang {
         width: 280px;
     }
 
-    .custom p{
+    .custom p {
         font-size: 20px;
     }
-    .hero{
+
+    .hero {
         height: auto;
     }
+
     .mainp {
         font-size: 10px;
     }
 
-    .d1{
+    .d1 {
         height: 200px;
         width: 200px;
     }
-    .d1 button{
+
+    .d1 button {
         width: 30px;
         height: 30px;
         font-size: 10px;
     }
-    .d1 h2{
+
+    .d1 h2 {
         font-size: 13px;
     }
-    .d1 p{
+
+    .d1 p {
         font-size: 12px;
     }
-    .learnmore p{
+
+    .learnmore p {
         font-size: 10px;
     }
-    .learnmore img{
+
+    .learnmore img {
         width: 4px;
     }
-    .buttomlinkdiv button{
+
+    .buttomlinkdiv button {
         width: 200px;
         height: 45px;
         font-size: 13px;
     }
-    .buttomlinkdiv p{
+
+    .buttomlinkdiv p {
         font-size: 13px;
     }
-    .custom p{
+
+    .custom p {
         font-size: 15px;
     }
-    .pricediv{
+
+    .pricediv {
         padding: 0;
     }
-    .pricediv div{
+
+    .pricediv div {
         width: 200px;
         height: 100px;
     }
-    .pricediv div h3{
+
+    .pricediv div h3 {
         font-size: 12px;
     }
-    .pricediv div p{
+
+    .pricediv div p {
         font-size: 25px;
     }
-   
-   
-        
 
 }
 
-@media (max-width:1080px){
-    .pricediv{
+@media (max-width:1080px) {
+    .pricediv {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 50px;
     }
-    .colordiv{
+
+    .colordiv {
         flex-direction: column;
         align-items: center;
         justify-content: center;
