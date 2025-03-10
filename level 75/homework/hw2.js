@@ -8,7 +8,8 @@ let user = {
 }
 
 for(let i in user){
-    console.log("key is", i)
+    console.log(i,user[i])
+    
 }
 
 console.log(user)

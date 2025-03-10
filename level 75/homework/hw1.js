@@ -5,12 +5,12 @@ let carInfo = {
     milage : 12000,
     year : 2020,
     condition : "prettyWell",
-    carCondition(){
-        return `car is in ${this.condition} condition`
+    carCondition(carCondition){
+        return `car is in ${carCondition} condition`
     }
 }
 
-console.log(carInfo.carCondition())
+console.log(carInfo.carCondition(carInfo.condition))
 
 
 
