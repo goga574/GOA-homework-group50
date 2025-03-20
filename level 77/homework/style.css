@@ -195,6 +195,7 @@ header i {
     justify-content: space-between;
     padding: 150px;
     position: relative;
+    width: 100%;
 }
 
 .dubai-img-div img{
@@ -329,9 +330,162 @@ header i {
     color:#000000BF ;
 }
 
+/* begining of third section */
+
+.third-section{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 150px;
+    gap: 15px;
+}
+.third-section p{
+    font-size: 28px;
+    font-weight: 500;
+    color: #ffa03f;
+}
+.third-section h6{
+    font-size: 50px;
+    font-weight: 700;
+    color: #000000;
+}
+.third-section span{
+    color :#ffa03f;
+}
+
+/* begining of fourth section */
+.fourth-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    position: relative;
+}
+.sami{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    box-shadow: 2px 2px 10px rgb(218, 218, 218);
+    border-radius: 40px;
+    position: relative;
+}
+.samiimg{
+    width: 300px;
+}
+
+
+.fourth-section button{
+    border-radius: 50%;
+    background-color: #ffa03f;
+    border: none;
+    padding: 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fourth-section button img{
+    width: 15px;
+    justify-items: 15px;
+}
+.samiinfo{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 35px;
+}
+.samiinfo div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.samives-text{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    
+    padding: 40px 20px;
+}
+.samives-text h6{
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+}
+.samives-text p{
+    font-size: 14px;
+    font-weight: 700;
+    color:#ffa03f ;
+}
+.samives-text span{
+    color: #000000;
+    opacity: 40%;
+}
+.samiinfo div p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #000000BF;
+}
+
+.smile-div{
+    border-radius: 38px;
+    padding: 5px 5px;
+    box-shadow: 2px 2px 5px rgb(218, 218, 218);
+    position: absolute;
+    background-color: #fff;
+    bottom: 170px;
+    left: 30px;
+}
+.smile-div p{
+    font-size: 14px;
+}
+.smile-div span{
+    opacity: 40%;
+}
+
+.threedoti{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+}
+.threedot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.first{
+    width: 25px;
+    height: 25px;
+
+}
+.second{
+    width: 16px;
+    height: 16px;
+
+}
+.third{
+    width: 18px;
+    height: 18px;
+}
+.b{
+    border-radius: 50%;
+    background-color:#FFB649 ;
+}
 
 
 
+
+.gela{
+    height: 200px;
+}
 
 
 
@@ -496,6 +650,31 @@ header i {
         right:183px;
         bottom: 145px;
     }
+    .third-section p{
+        font-size: 23px;
+    }
+    .third-section h6{
+        font-size: 40px;
+    }
+    .samiimg{
+        width: 230px;
+    }
+    .samives-text h6{
+        font-size: 17px;
+    }
+    .samives-text p{
+        font-size: 12px;
+    }
+    .samiinfo div img{
+        width: 19px ;
+        height: 19px;
+    }
+    .samiinfo{
+        gap: 10px;
+    }
+    .smile-div{
+        bottom: 160px;
+    }
 }
 
 /* media 2 */
@@ -599,10 +778,97 @@ header i {
         width: 20px;
         height: 20px;
     }
-    /* .three-thing div h5{
-      
-    } */
+    .three-thing div h5{
+        font-size: 13px;
+    }
+    .three-thing div p{
+        font-size: 10px;
+    }
+    .second-section{
+        padding: 150px 60px;
+    }
+    .downimg-div{
+        left: 150px;
+    }
+    .playdiv{
+        left: 140px;
+    }
+    .plane,.line{
+        display: none;
+    }
+    .third-section{
+        padding: 0px 60px;
+    }
+    .third-section p{
+        font-size: 19px;
+    }
+    .third-section h6{
+        font-size: 30px;
+    }
+
+
+    .samiimg{
+        width: 195px;
+    }
+    .samives-text h6{
+        font-size: 14px;
+    }
+    .samives-text p{
+        font-size: 10px;
+    }
+    .samiinfo div img{
+        width: 15px ;
+        height: 15px;
+    }
+    .samiinfo div p{
+        font-size: 10px;
+    }
+    .samiinfo{
+        gap: 10px;
+    }
+    .smile-div{
+        bottom: 155px;
+        
+    }
+    .smile-div p{
+        font-size: 10px;
+    }
+    .fourth-section button{
+        padding: 7px 7px;
+
+    }
+    .fourth-section button img{
+        height: 10px;
+        width: 10px;
+    }
 }
+
+
+@media (max-width:700px){
+    .fourth-section{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .fourth-section button{
+        display: none;
+        
+    }
+    .first{
+        width: 20px;
+        height: 20px;
+    }
+    .second{
+        width: 14px;
+        height: 14px;
+
+    }
+    .third{
+        width: 15px;
+        height: 15px;
+    }
+}
+
+
 
 @media (max-width:600px) {
 
@@ -656,4 +922,47 @@ header i {
         font-size: 10px;
     }
 
+
+
+
+
+
+    .second-section{
+        flex-direction: column-reverse;
+        padding: 100px 0px;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+    .dubai-img-div img{
+        padding: 0px 0px ;
+        width: 200px;
+    }
+    .dubai-text-div{
+        /* width: 80%; */
+        padding: 0px 30px;
+    }
+    .two-text-div .choose-p{
+        font-size: 13px;
+    }
+    .two-text-div h4{
+        font-size: 20px;
+    }
+    .three-thing div h5{
+        font-size: 11px;
+    }
+    .downimg-div,.playdiv{
+       display: none;
+    }
+
+    .third-section{
+        padding: 0px 30px;
+    }
+    .third-section p{
+        font-size: 15px;
+    }
+    .third-section h6{
+        font-size: 20px;
+    }
+    
 }
