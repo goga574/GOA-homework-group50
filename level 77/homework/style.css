@@ -599,9 +599,9 @@ header i {
         width: 20px;
         height: 20px;
     }
-    .three-thing div h5{
-        font-size: ;
-    }
+    /* .three-thing div h5{
+      
+    } */
 }
 
 @media (max-width:600px) {
