@@ -1,63 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     height: 100vh;
     font-family: "Inter", sans-serif;
     background-color: #f1f1f1;
 }
 
-header{
+header {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 50px;
 }
-.headerparagraph{
+
+.headerparagraph {
     font-weight: 700;
     font-size: 24px;
     color: #000000;
 }
-.headerparagraph span{
+
+.headerparagraph span {
     font-weight: 700;
     font-size: 24px;
     color: #ffa03f;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
 }
-nav ul{
+
+nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:50px ;
+    gap: 50px;
 }
-nav ul li{
+
+nav ul li {
     list-style-type: none;
     font-weight: 500;
     font-size: 20px;
-    color:#000000;
+    color: #000000;
 }
-header i{
+
+header i {
     font-size: 25px;
 }
-.hero-section{
+
+.hero-section {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     padding: 50px 100px;
     position: relative;
 }
-.hero-text{
+
+.hero-text {
     display: flex;
     align-items: start;
     justify-content: center;
@@ -66,216 +75,585 @@ header i{
     width: 50%;
 }
 
-.box-div{
+.box-div {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: -10px 5px 10px  rgb(224, 226, 224);
+    box-shadow: -10px 5px 10px rgb(224, 226, 224);
     border-radius: 32px;
-    gap:60px;
+    gap: 60px;
     padding: 30px 40px;
     position: relative;
     z-index: 10;
     top: 70px;
     backdrop-filter: blur(10px);
 }
-.arrowdiv{
+
+.arrowdiv {
     display: flex;
     align-items: start;
     justify-content: center;
     flex-direction: column;
     gap: 10px;
     width: 100px;
-    
+
 }
 
-.arrowdiv div{
+.arrowdiv div {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
 }
-.arrowdiv div h2{
+
+.arrowdiv div h2 {
     font-weight: 500;
     font-size: 20px;
     color: #000000;
 }
-.arrowdiv div img{
+
+.arrowdiv div img {
     width: 15px;
     height: 15px;
 }
-.arrowdiv p{
+
+.arrowdiv p {
     font-weight: 500;
     font-size: 14px;
     color: #000000A6;
 }
-.yellow-search{
+
+.yellow-search {
     width: 50px;
     height: 50px;
     margin-left: 100px;
 }
-.hero-text h1{
+
+.hero-text h1 {
     font-weight: 700;
     font-size: 70px;
     color: #000000;
     /* line-height: 137px; */
 }
-.hero-paragraph{
+
+.hero-paragraph {
     font-weight: 500;
     font-size: 20px;
     /* line-height: 137px; */
-    color:#000000BF ;
-}
-.hero-text span{
-    text-decoration: underline  5px solid #ffa03f;
+    color: #000000BF;
 }
 
-.hero-images{
+.hero-text span {
+    text-decoration: underline 5px solid #ffa03f;
+}
+
+.hero-images {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
-.double-image{
+
+.double-image {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 10px;
 }
-.double-image img{
+
+.double-image img {
     width: 200px;
     height: 320px;
-}.camel-image{
+}
+
+.camel-image {
     width: 300px;
 }
 
-.planeimg,.lineimg{
+.planeimg,
+.lineimg {
     position: absolute;
     top: -10px;
     right: 150px;
 }
-.lineimg{
+
+.lineimg {
     width: 150px;
 }
-.planeimg{
+
+.planeimg {
     right: 110px;
     top: 1;
 }
 
+/* beginning of second section */
+
+.second-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 150px;
+    position: relative;
+}
+
+.dubai-img-div img{
+    width: 400px;
+    padding-right: 50px;
+    /* box-shadow: 20px 20px 1px black; */
+    border-radius: 20px;
+    position: relative;
+}
+.playdiv{
+    width: 70px;
+    height: 70px;
+    /* background-color: black; */
+    backdrop-filter: blur(10px);
+    position: absolute;
+    left: 300px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.playdiv img{
+    width: 25px;
+    height: 25px;
+}
+
+.downimg-div{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    backdrop-filter: blur(20px);
+    bottom: 120px;
+    left: 360px;
+    padding: 15px 15px;
+    border-radius: 22px;
+    
+}
+.downimg-div p{
+    font-size: 15px;
+    color: #fff;
+}
+.downimg-div button{
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.downimg-div button img{
+    width: 20px;
+}
+
+.plane,.line{
+    position: absolute;
+    right: 250px;
+    bottom: -50px;
+}
+.line{
+    transform: rotate(240deg);
+    width: 140px;
+}
+.plane{
+    bottom: 40px;
+    right: 372px;
+    transform: rotate(240deg);
+    width: 30px;
+}
+.dubai-text-div{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+
+} 
+.three-thing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.three-thing div{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 7px;
+}
+.three-thing button{
+    width: 76px;
+    height: 76px;
+    border-radius:23px ;
+    border: none;
+    box-shadow: 3px 3px 3px rgb(223, 217, 217);
+}
+.three-thing button img{
+    width: 44px;
+    height: 44px;
+}
+.gap-div{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.two-text-div p {
+    font-size: 23px;
+    font-weight: 500;
+    color: #ffa03f;
+}
+.two-text-div h4{
+    font-weight: 700;
+    font-size: 50px;
+    color: #000000;
+}
+
+.three-thing div h5{
+    font-size: 23px;
+    font-weight: 500;
+    color:#000000;
+}
+.three-thing div p{
+    font-size: 16px;
+    font-weight: 400;
+    color:#000000BF ;
+}
 
 
-/* hero-section media */
 
-@media (max-width:1200px){
-   .hero-text h1{
-    font-size: 40px;
-   }
-   .hero-text{
-    padding-right: 20px;
-   }
-    .hero-paragraph{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media 1*/
+
+@media (max-width:1200px) {
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .hero-text {
+        padding-right: 20px;
+    }
+
+    .hero-paragraph {
         font-size: 15px;
     }
-    .hero-text{
+
+    .hero-text {
         width: 50%;
     }
-    .double-image img{
+
+    .double-image img {
         width: 150px;
         height: 220px;
     }
-    .camel-image{
+
+    .camel-image {
         width: 170px;
     }
-    .lineimg{
+
+    .lineimg {
         width: 80px;
     }
-    .planeimg{
+
+    .planeimg {
         width: 30px;
         right: 125px;
     }
-    .box-div{
+
+    .box-div {
         position: relative;
         top: 50px;
-
+        gap: 40px;
     }
-    .yellow-search{
+
+    .yellow-search {
         width: 50px;
         height: 50px;
         margin-left: 0px;
-    } 
-    .arrowdiv div h2{
+    }
+
+    .arrowdiv div h2 {
         font-weight: 500;
         font-size: 17px;
         color: #000000;
     }
-    .arrowdiv div img{
+
+    .arrowdiv div img {
         width: 10px;
         height: 10px;
     }
+
     .arrowdiv p {
         font-size: 13px;
     }
-    .box-div{
-        gap: 40px;
-    }
-    .headerparagraph{
+
+    .headerparagraph {
         font-size: 20px;
     }
-    nav ul li{
+
+    nav ul li {
         font-size: 16px;
     }
+
     header i {
         font-size: 20px;
     }
-}
 
-/* 
-.box-div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: -10px 5px 10px  rgb(224, 226, 224);
-    border-radius: 32px;
-    gap:60px;
-    padding: 30px 40px;
-    position: relative;
-    z-index: 10;
-    top: 70px;
-    backdrop-filter: blur(10px);
-    backdrop-filter: transparent(10px);} */
-/* 
-    .arrowdiv{
-        display: flex;
-        align-items: start;
-        justify-content: center;
-        flex-direction: column;
-        gap: 10px;
-        width: 100px;
+    .dubai-img-div img{
+        width: 320px;
     }
-    
-    .arrowdiv div{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
+    .playdiv{
+        position: absolute;
+        left: 210px;
+        width: 55px;
+        height: 55px;
     }
-    .arrowdiv div h2{
-        font-weight: 500;
-        font-size: 20px;
-        color: #000000;
-    }
-    .arrowdiv div img{
+    .playdiv img{
         width: 15px;
         height: 15px;
     }
-    .arrowdiv p{
-        font-weight: 500;
-        font-size: 14px;
-        color: #000000A6;
+    .downimg-div{
+        left: 250px;
     }
-    .yellow-search{
+    .two-text-div h4{
+        font-size: 30px;
+    }
+    .two-text-div .choose-p{
+        font-size:15px ;
+    }
+    .three-thing button{
         width: 50px;
         height: 50px;
-        margin-left: 100px;
-    } */
+        border-radius: 15px;
+    }
+    .three-thing button img{
+        width: 30px;
+        height: 30px;
+    }
+    .three-thing div h5{
+        font-size: 16px;
+    }
+    .three-thing div p{
+        font-size: 13px;
+    }
+    .second-section{
+        padding: 150px 100px;
+    }
+    .line{
+        width: 100px;
+        bottom: 80px;
+        right: 100px;
+    }
+    .plane{
+        right:183px;
+        bottom: 145px;
+    }
+}
+
+/* media 2 */
+@media (max-width:880px) {
+    .double-image img {
+        width: 100px;
+        height: 150px;
+    }
+
+    .camel-image {
+        width: 120px;
+    }
+
+    .lineimg {
+        width: 50px;
+        top: 50px;
+    }
+
+    .planeimg {
+        width: 20px;
+        right: 130px;
+        top: 50px;
+    }
+
+    .box-div {
+        padding: 20px 20px;
+        gap: 10px;
+        top: 30px;
+    }
+
+    .arrowdiv div h2 {
+        font-size: 14px;
+    }
+
+    .arrowdiv p {
+        font-size: 11px;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .headerparagraph,.headerparagraph span {
+        font-size: 18px;
+    }
+
+    nav ul li {
+        font-size: 12px;
+    }
+
+    nav ul {
+        gap: 30px;
+    }
+
+    nav img {
+        width: 15px;
+        height: 15px;
+        margin-left: 0px;
+    }
+
+    header i {
+        font-size: 15px;
+    }
+    .dubai-img-div img{
+        width: 250px;
+    }
+    .playdiv{
+        width: 40px;
+        height: 40px;
+        left: 180px;
+    }
+    .playdiv img{
+        width: 15px;
+        height: 15px;
+    }
+    .downimg-div{
+        left: 200px;
+    }
+    .downimg-div button{
+        width: 30px;
+        height: 30px;
+    }
+    .downimg-div button img{
+        width: 15px;
+        height: 15px;
+    }
+    .downimg-div p{
+        font-size: 10px;
+    }
+    .two-text-div p{
+        font-size: 12px;
+    }
+    .two-text-div h4{
+        font-size: 23px;
+    }
+    .three-thing button{
+        width: 35px;
+        height: 35px;
+    }
+    .three-thing button img{
+        width: 20px;
+        height: 20px;
+    }
+    .three-thing div h5{
+        font-size: ;
+    }
+}
+
+@media (max-width:600px) {
+
+    nav ul li,header img,.planeimg,.lineimg {
+        display: none;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px;
+        gap: 100px;
+    }
+
+    .hero-text {
+        padding: 0px 0px;
+    }
+
+    .hero-images {
+        flex-direction: column;
+    }
+
+    .double-image img,.camel-image {
+        width: 200px;
+        height: 270px;
+    }
+
+    .box-div {
+        flex-direction: column;
+        gap: 40px;
+        top: 0;
+        right: 0px;
+        left: 0;
+        bottom: 0;
+        padding: 30px 15px;
+    }
+    .arrowdiv{
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-text{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-text h1,.hero-text span{
+        font-size: 20px;
+    }
+    .hero-paragraph{
+        font-size: 10px;
+    }
+
+}
