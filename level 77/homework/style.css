@@ -481,14 +481,115 @@ header i {
 }
 
 
-
-
-.gela{
-    height: 200px;
+/* begining of fourth section */
+.ocean-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 100px;
 }
 
 
+.ocean-txt{
+    gap: 100px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+}
+.txt-together{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding-right: 30px;
+}
+.yellow-paragraph{
+    font-size: 23px;
+    font-weight: 500;
+    color: #ffa03f;
+}
+.exploere-paragraph{
+    font-size: 50px;
+    font-weight: 700;
+    color: #000000;
+}
+.text-paragraph{
+    font-size: 20px;
+    font-weight: 500;
+    color:#000000BF ;
+    line-height: 150%;
+}
+.txt-together button{
+    border: none;
+    border-radius: 7px;
+    padding: 13px 35px;
+    background-color: #ffa03f;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
 
+.numbers-div{
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    align-items: center;
+    justify-items: start;
+    
+    position: relative;
+    z-index: 5;
+}
+.experiance{
+    font-size: 15px;
+}
+.ricxvebi{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.number-p{
+    font-size: 45px;
+    font-weight: 500;
+    color: #000000;
+}
+.txt-p{
+    font-size: 22px;
+    font-weight: 400;
+    color: #00000080;
+}
+
+
+.smailebi-div{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: start;
+    backdrop-filter:blur(50px) ;
+    border-radius: 17px;
+    padding: 20px 20px;
+    box-shadow: 2px 2px 10px rgb(220, 217, 217);
+    gap: 10px;
+    /* width: 300px; */
+}
+.emoji img{
+    width: 25px;
+    height: 25px;
+}
+.emoji{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ocean-img img{
+    width: 400px
+}
 
 
 
@@ -675,6 +776,36 @@ header i {
     .smile-div{
         bottom: 160px;
     }
+
+    .yellow-paragraph{
+        font-size: 20px;
+    }
+    .exploere-paragraph{
+        font-size: 35px;
+    }
+    .text-paragraph{
+        font-size: 16px;
+    }
+    .txt-together button{
+        padding: 13px 25px;
+        font-size: 16px;
+    }
+    .number-p{
+        font-size: 35px;
+    }
+    .txt-p{
+        font-size: 18px;
+    }
+    .numbers-div{
+        display: grid;
+        grid-template-columns: 150px 150px 150px 205px;
+    }
+    .ocean-img img{
+        width: 320px;
+    }
+    .ocean-section{
+        padding: 100px 50px;
+    }
 }
 
 /* media 2 */
@@ -841,6 +972,49 @@ header i {
         height: 10px;
         width: 10px;
     }
+
+
+    .yellow-paragraph{
+        font-size: 17px;
+    }
+    .exploere-paragraph{
+        font-size: 25px;
+    }
+    .text-paragraph{
+        font-size: 13px;
+    }
+    .number-p{
+        font-size: 20px;
+    }
+    .txt-p{
+        font-size: 14px;
+    }
+    .emoji img{
+        width: 20px;
+        height: 20px;
+    }
+    .emoji{
+        gap: 10px;
+    }
+    .experiance{
+        font-size: 13px;
+    }
+    .smailebi-div{
+        padding: 15px 15px;
+    }
+    .ocean-img img{
+        width: 250px;
+    }
+    .ocean-txt{
+        gap: 50px;
+    }
+    .txt-together{
+        gap: 20px;
+    }
+    .numbers-div{
+        grid-template-columns: 100px 100px 100px 190px;
+        gap: 20px;
+    }
 }
 
 
@@ -865,6 +1039,40 @@ header i {
     .third{
         width: 15px;
         height: 15px;
+    }
+    .yellow-paragraph{
+        font-size: 15px;
+    }
+    .exploere-paragraph{
+        font-size: 18px;
+    }
+    .text-paragraph{
+        font-size: 10px;
+    }
+    .txt-together button{
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+    .ocean-img img{
+        width: 200px;
+        height: 300px;
+    }
+    .number-p{
+        font-size: 15px;
+    }
+    .txt-p{
+        font-size: 10px;
+    }
+    .emoji img{
+        width: 15px;
+        height: 15px;
+    }
+    .experiance{
+        font-size: 10px;
+    }
+    .numbers-div{
+        grid-template-columns: 50px 50px 50px 145px;
+        gap: 50px;
     }
 }
 
@@ -965,4 +1173,35 @@ header i {
         font-size: 20px;
     }
     
+
+
+    .ocean-section{
+        padding: 100px 0px;
+        flex-direction: column;
+        gap: 60px;
+    }
+    .numbers-div{
+        grid-template-columns: 70px 70px 70px ;
+        grid-template-rows:50px 70px ;
+        gap: 40px;
+        width: 100%;
+    }
+    .txt-together{
+        padding: 0px 0px;
+        width: 100%;
+    }
+    .smailebi-div{
+        grid-column:2;
+    }
+    .ocean-txt{
+        width: 100%;
+        padding: 0px 20px;
+    }
+    .numbers-div{
+        width: 90%;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
 }
