@@ -9,5 +9,5 @@ let  img = document.getElementById("pic")
 // })
 
 img.addEventListener("mouseover", function(){
-    img.src = "./th.pnj"
+    img.src = "img2.jpg"
 })
