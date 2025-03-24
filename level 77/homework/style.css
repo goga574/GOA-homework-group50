@@ -10,6 +10,7 @@ body {
     height: 100vh;
     font-family: "Inter", sans-serif;
     background-color: #f1f1f1;
+    /* position: relative; */
 }
 
 header {
@@ -990,8 +991,38 @@ footer{
 
 
 
+.darkmode{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFA03F;
+    padding: 10px 10px;
+    width: 200px;
+    border-radius: 20px;
+    position: sticky;
+    left: 20px;
+    top: 20px;
+    z-index: 20000;
+    
+}
 
-
+.light{
+    padding: 5px 20px;
+    border: none;
+    cursor: pointer;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    
+}
+.dark{
+    padding: 5px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #000000;
+    color: #fff;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
 
 
 
