@@ -16,6 +16,7 @@ let span = document.querySelectorAll("span")
 let body = document.body
 
 
+
 light[0].addEventListener("click",function(){
     for(let i of p){
         i.style.color="#000"
