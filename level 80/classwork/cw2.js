@@ -4,10 +4,6 @@
 
 let  img = document.getElementById("pic")
 
-// img.addEventListener("click", function(){
-//     img.src = "th (1)..jpg"
-// })
-
 img.addEventListener("mouseover", function(){
     img.src = "img2.jpg"
 })
