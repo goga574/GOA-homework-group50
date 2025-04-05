@@ -12,15 +12,15 @@
 //     img.src="img3.jpg"
 // })
 
-let villa = document.getElementById("villa1");
-let mountain = document.getElementById("mountain1");
-let sea = document.getElementById("sea1");
+let villa = document.querySelector("#villa1");
+let mountain = document.querySelector("#mountain1");
+let sea = document.querySelector("#sea1");
 
 
 villa.addEventListener("mouseover", function () {
-    img.src = "/level 80/homework/img2.jpg";
+    img.src = "/level 80/homework/imgg2.jpg";
 });
 
 mountain.addEventListener("click", function () {
-    img.src = "/level 80/homework/img3.jpg";
+    img.src = "/level 80/homework/imgg3.jpg";
 });
