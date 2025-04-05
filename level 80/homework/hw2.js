@@ -17,10 +17,11 @@ let mountain = document.querySelector("#mountain1");
 let sea = document.querySelector("#sea1");
 
 
-villa.addEventListener("mouseover", function () {
-    img.src = "/level 80/homework/imgg2.jpg";
+villa.addEventListener("mouseover", function(){
+    img.src = "./images/sunset.jpg"
 });
 
-mountain.addEventListener("click", function () {
-    img.src = "/level 80/homework/imgg3.jpg";
+mountain.addEventListener("click", function(){
+    img.src = "./images/villa.jpg"
 });
+console.log(villa)
