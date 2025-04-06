@@ -6,17 +6,21 @@ switch(month){
     case "მარტი":
     case "აპრილი":
     case "მაისი":
-    case "ივნისი":
         console.log("გაზაფხული")
+        break
+    case "ივნისი":
     case "ივლისი":
     case "აგვისტო":
+        console.log("ზაფხული")
+        break
     case "სექტემბერი":
     case "ოქტომბერი":
-        console.log("ზაფხული")
     case "ნოემბერი":
+        console.log("შემოდგომა")
+        break
     case "დეკემბერი":
     case "იანვარი":
     case "თებერვალი":
-        console.log("ზაფხული")
-
+        console.log("ზამთარი")
+        break
 }
