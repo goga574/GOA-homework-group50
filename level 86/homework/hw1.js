@@ -8,6 +8,12 @@ switch(language){
     case "french":
         console.log("bonjour")
         break
+    case "georgia":
+        console.log("გამარჯობა")
+        break
+    case "english":
+        console.log("Hello")
+        break
     default:
         console.log("this type of language does't exist")
 }
