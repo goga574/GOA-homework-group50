@@ -55,9 +55,9 @@ button.addEventListener("click",function(){
 
             if(count1 == 10){ 
                 body.innerHTML = player1Style
-             }else if(count2 == 10){
+            }else if(count2 == 10){
                  body.innerHTML = player2Style
-             }
+            }
                    
 
 
