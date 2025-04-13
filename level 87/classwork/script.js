@@ -78,7 +78,7 @@ button.addEventListener("click", function() {
 
             
 
-    }, 0)
+    }, 1200)
 
     audio.play()
 })
