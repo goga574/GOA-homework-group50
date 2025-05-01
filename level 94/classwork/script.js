@@ -1,45 +1,45 @@
 // 1)შექმენით ფუნქცია რომელსაც გადაეცემა ორი არგუმენტი , x და y რიცხვები და ფუნქციაში დააბრუნეთ x-ი ხარისხად y , აუცილებლად გამოიყენეთ arrow function-ები
 
 
-// // first way
-// let something = (x,y) => x**y 
+// first way
+let something = (x,y) => x**y 
 
-// console.log(something(5,2))
+console.log(something(5,2))
 
-// // second way
-// let something1 = (first,second) =>{
-//     return first**second
-// }
+// second way
+let something1 = (first,second) =>{
+    return first**second
+}
 
-// console.log(something1(3,5))
+console.log(something1(3,5))
 
 
 
 // // 2)შექმენით ფუნქცია arrow function ების დახმარებით რომელსაც გადაეცემა 1 პარამეტრი დაწერეთ ისე როგორც არის best practice
 
-// let best = surname => surname
+let best = surname => surname
 
-// console.log(best("chalauri"))
+console.log(best("chalauri"))
 
 
 // // 3)შექმენით ფუნქცია რომელიც ჩაამატებს ახალ სიაში ლუწ რიცხვებს და შემდეგ გაიგებთ ამ ახალი სიიდან ამ რიცხვებისჯამს ,გამოიყენეთ arrow functions
 
-// let sum = 0
-// let sum1 = []
+let sum = 0
+let sum1 = []
 
-// let listi = nums =>{
-//     for(let i of nums){
-//         if(i%2==0){
-//             sum1.push(i)
-//         }
-//     }
-//     for(let i of sum1){
-//         sum+=i
-//     }
-//     return sum
-// }
+let listi = nums =>{
+    for(let i of nums){
+        if(i%2==0){
+            sum1.push(i)
+        }
+    }
+    for(let i of sum1){
+        sum+=i
+    }
+    return sum
+}
 
-// console.log(listi([4,5,6,7,8]))
+console.log(listi([4,5,6,7,8]))
 
 
 
