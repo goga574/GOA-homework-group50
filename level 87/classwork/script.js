@@ -27,9 +27,9 @@ let againbut = document.querySelector("#again")
 let audio2 = new Audio("audio2.wav")
 let audio = new Audio("dice mp3.mp3")
 
+
 let count1 = 0
 let count2 = 0
-
 
 
 button.addEventListener("click", function() {
@@ -75,8 +75,6 @@ button.addEventListener("click", function() {
                 gif.style.display = "block"
                 audio2.play()
             }
-
-            
 
     }, 1200)
 
