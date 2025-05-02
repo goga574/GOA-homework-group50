@@ -1,15 +1,11 @@
 // 3)შექმენით ფუნქცია რომელიც სიიდან ამოიღებს ყველა ელემენტს და დააბრუნებს ახალ სიას სადაც მხოლოდ 5 სიმბოლოზე მეტი სიტყვები მოხვდებიან
 
 
-
-let res = []
-let func = list1 =>{
-    for(let i of list1){
-        if(i.length>5){
-            res.push((i))
-        }
+let names = ["giorgi","ana","irakli"]
+let func = element =>{
+    if(element.length>5){
+        return element
     }
-    return res
-
 }
-console.log(func(["giorgi","ana","ia","irakli","gio","aleqsandre"]))
+let idk = names.map(func)
+console.log(idk)
