@@ -6,3 +6,5 @@ for i in name:
         name.remove(i)
 print(name)
 
+
+
