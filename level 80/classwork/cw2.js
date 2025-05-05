@@ -7,3 +7,7 @@ let  img = document.getElementById("pic")
 img.addEventListener("mouseover", function(){
     img.src = "img2.jpg"
 })
+
+img.addEventListener("mouseout", function(){
+    img.src = "img1.jpg"
+})

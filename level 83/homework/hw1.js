@@ -1,6 +1,6 @@
 let hexColor = "0123456789abcdef"
 
-let resultColor = ""
+let resultColor = "#"
 
 let clickButton = document.getElementById("button")
 
