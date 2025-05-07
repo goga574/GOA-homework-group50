@@ -1,22 +1,22 @@
 // შექმენით 4 div-კონტეინერი,თითოეულ დივს მიეცით id , თუ რა ფერი უნდა გახდეს ეს დივი დაკლიკების შემდეგ,ასევე ამ დივში უნდა იყოს პარაგრაფი(Click to see color), შემდეგ javaascript-იდან შეამოწმეთ რომელ DIV-ზე განხორციელდა მოვლენა , ასევე შეამოწმეთ ამ DIV- ის ID-ები და მიანიჭეთ შესაბამისი ფერი ,  ასევე შეცვალეთ paragraph-ის textContent იმ ფერის სახელით რა ფერითაც შეიცვლება დივი
 
 let p = document.querySelectorAll("p")
-let list = ["red","blue","green","yellow"]
-document.addEventListener("click" , function(event){
+let div = document.querySelectorAll("div")
+document.addEventListener("click", function (event) {
+    
+
+
+    for (let i = 0; i <= p.length; i++) {
+        p[0].textContent = div[0].id
+        p[1].textContent = div[1].id
+        p[2].textContent = div[2].id
+        p[3].textContent = div[3].id
+
+    }
+
+
     event.target.style.backgroundColor = event.target.id
 
-   
-    for(let i = 0;i <= p.length;i++){
-        p[0].textContent = list[0]
-        p[1].textContent = list[1]
-        p[2].textContent = list[2]
-        p[3].textContent = list[3]
-     
-    }
-        
-
-    
-    
 })
 
 
