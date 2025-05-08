@@ -4,6 +4,11 @@ let same = document.querySelectorAll(".same")
 
 let clock = document.querySelector("#clock")
 
+let heartBut = document.querySelector("#heart-but")
+
+let timeBut = document.querySelector("#time-but")
+
+let rateDiv = document.querySelector(".rate")
 
 let adress = ["imgs/black.png","imgs/red.png","imgs/blue.png","imgs/purple.png"]
 
@@ -32,6 +37,17 @@ setInterval(() => {
 
 }, 1000)
 
+
+heartBut.addEventListener("click",() =>{
+    time.style.display = "none"
+    rateDiv.style.display = "flex"
+})
+
+timeBut.addEventListener("click",()=>{
+    rateDiv.style.display = "none"
+    time.style.display = "flex"
+
+})
 
 
 
