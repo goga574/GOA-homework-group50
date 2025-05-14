@@ -6,9 +6,8 @@
 body{
     font-family: sans-serif;
     height:100vh ;
-    display: flex;
-    align-items: start;
-    justify-content: center;
+    position: relative;
+
 }
 header{
     width: 100%;
@@ -17,7 +16,7 @@ header{
     justify-content: space-between;
     padding: 10px 100px;
     box-shadow: 0px 0px 10px rgb(209, 209, 209);
-    position: sticky;
+    position: fixed;
     top: 0px;
 }
 
@@ -48,31 +47,74 @@ li:hover{
     cursor: pointer;
 }
 
-.web-name{
-    font-family:fantasy;
-    letter-spacing: 3px;
-}
-
-.card-section{
-    height: 100vh;
-    width: 250px;
-    background-color: #777;
+.sidebar-logo{
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 100px;
+    cursor: pointer;
+}
+.sidebar{
+    width:250px;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items:center;
     justify-content: start;
     flex-direction: column;
-    padding: 20px 0px;
-    gap: 30px;
-    /* display: none; */
+    padding-top: 40px;
+    border: 3px solid black;
+    
+}
+.sidebar-header{
+    font-size: 25px;
+}
+.quit{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    padding: 5px 10px;
+    color: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.quit:hover{
+    color: #ffffff;
+    background-color: red;
 }
 
-
-.added-items{
-    width: 100%;
-    height: 100px;
+.pc-cart{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px 0px;
     border: 1px solid black;
+    width: 100%;
+}
+
+.cart-info{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 10px;
+}
+.name,.price {
+    font-size: 17px;
+}
+.remove{
+    padding: 5px 5px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
 }
