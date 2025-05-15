@@ -4,12 +4,12 @@ let sidebar = document.querySelector(".sidebar")
 
 let quit = document.querySelector(".quit")
 
-showsidebar.addEventListener("click",()=>{
+showsidebar.addEventListener("click", () => {
     sidebar.style.right = "0px"
 })
 
-quit.addEventListener("click",()=>{
-     sidebar.style.right = "-300px"
+quit.addEventListener("click", () => {
+    sidebar.style.right = "-300px"
 })
 
 
@@ -28,8 +28,8 @@ let totalPrice = document.querySelectorAll(".totprice")
 
 
 
-for(let i = 0;i<addButton.length;i++){
-    addButton[i].addEventListener("click",()=>{
+for (let i = 0; i < addButton.length; i++) {
+    addButton[i].addEventListener("click", () => {
         let info = card[i]
         let img = info.querySelector(".img").src
         let name = info.querySelector(".pcname").textContent
@@ -38,7 +38,7 @@ for(let i = 0;i<addButton.length;i++){
         quantity[0].textContent = count
 
 
-        let tot = priceCounter+=Number(price)
+        let tot = priceCounter += Number(price)
         totalPrice[0].textContent = tot
 
 
@@ -58,18 +58,21 @@ for(let i = 0;i<addButton.length;i++){
         let priceP = document.createElement("p")
         priceP.textContent = `$${price}`
 
-        let removeBut = document.createElement
-        ("button")
-       
+        let newButton = document.createElement("button")
+        newButton.classList.add("remove")
+        newButton.textContent = "Remove"
         
-    
+
 
         sidebar.appendChild(newDiv)
-        childDiv.appendChild(nameP)
-        childDiv.appendChild(priceP)
-        childDiv.appendChild(removeBut)
         newDiv.appendChild(img1)
         newDiv.appendChild(childDiv)
-        
+        childDiv.appendChild(nameP)
+        childDiv.appendChild(priceP)
+        childDiv.appendChild(newButton)
+        console.log(newDiv)
+
+
+
     })
 }
