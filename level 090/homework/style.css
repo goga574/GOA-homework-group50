@@ -61,18 +61,38 @@ li:hover{
     position: fixed;
     z-index: 100;
     top: 0;
-    right: 0;
+    right: -300px;
     display: flex;
     align-items:center;
     justify-content: start;
     flex-direction: column;
     padding-top: 40px;
     border: 3px solid black;
-    
+    transition: 0.5s ease-out;
+    overflow-y: scroll;
+
 }
 .sidebar-header{
     font-size: 25px;
 }
+.change{
+    width: 100px;
+}
+.amount-and-sum{
+    width: 231px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    position:fixed;
+    bottom: 3px;
+    height: 100px;
+    /* background-color: rgb(209, 203, 203); */
+    backdrop-filter: blur(30px);
+    padding: 15px;
+}
+
 .quit{
     position: absolute;
     top: 10px;
@@ -116,5 +136,52 @@ li:hover{
     background-color: red;
     color: #fff;
     border-radius: 5px;
+    cursor: pointer;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.pcs{
+    width: 100%;
+    hanging-punctuation: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.pcdiv{
+    width: 200px;
+    height: 250px;
+    box-shadow: 0px 0px 10px rgb(215, 219, 215);
+    border-radius:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+.infodiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+.pcname{
+    font-size: 20px;
+}
+.addbutton{
+    padding: 8px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(139, 200, 48);
+    font-size: 15px;
     cursor: pointer;
 }
