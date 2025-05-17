@@ -63,6 +63,13 @@ for (let i = 0; i < addButton.length; i++) {
         newButton.textContent = "Remove"
         
 
+        newButton.addEventListener("click",()=>{
+            newDiv.remove()
+            let tot = priceCounter -= Number(price)
+            totalPrice[0].textContent = tot
+            count--
+            quantity[0].textContent = count
+        })
 
         sidebar.appendChild(newDiv)
         newDiv.appendChild(img1)

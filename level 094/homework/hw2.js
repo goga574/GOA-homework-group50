@@ -3,9 +3,55 @@
 
 let names = ["giorgi chalauri","giorgi bibilashivli","gela alaxverdovi"]
 
-let name1 = element =>{
-    let initial = element.split(" ")
-    return `${initial[0][0].toUpperCase()}.${initial[1][0].toUpperCase()}`
+let func = element =>{
+    let splited = element.split(" ")
+    return `${splited[0][0].toUpperCase()}.${splited[1][0].toUpperCase()}`
 }
-let list = names.map(name1)
-console.log(list)
+
+newArr = names.map(func)
+console.log(newArr)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,16 +1,14 @@
 // 1) შექმენით სია სადაც რენდომულად შეიტანთ რიცხვებს , შემდეგ დაწეეთ ფუნქცია რომელიც გადაუვლის თითოეულ ელემენტს სიაში და დააბრუნებს ახალ სიას სადაც იქნება მხოლოდ ლუწი რიცხვები , ასევე შექმენით იგივენაირი მეორე ფუნქცია კენტი რიცხვებისთვის
 
-
 let resList = [1,2,3,4,5,6,7,8]
-let func = element =>{
-    if(element%2==0){
+let func = element => {
+    if(element%2===0){
         return element
     }
 }
-let idk = resList.map(func)
-
-console.log(idk)            
-
+newArr = resList.map(func)
+        
+console.log(newArr)
 
 
 
@@ -25,3 +23,13 @@ console.log(idk)
 //     return result
 // }
 // console.log("Odd Numbers: " + func2([1,2,3,4,5,6,7,8,9,10]))
+
+
+
+
+
+
+
+
+
+

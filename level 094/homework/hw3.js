@@ -3,9 +3,43 @@
 
 let names = ["giorgi","ana","irakli"]
 let func = element =>{
-    if(element.length>5){
+    if(element.length > 5){
         return element
     }
 }
+
 let idk = names.map(func)
 console.log(idk)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
