@@ -25,7 +25,7 @@ form.addEventListener("submit",(e)=>{
     table.innerHTML += `
         <tr>
             <td>${obj.email}</td>
-            <td>${objpassword}</td>
+            <td>${obj.password}</td>
         </tr>`
 
 })

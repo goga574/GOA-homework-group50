@@ -13,15 +13,18 @@ let form = document.querySelector("form")
 function constructorObj(username,email,password){
     this.username = username
     this.email = email
-    this.passwprd = passwor
+    this.password = password
 
 }
 
 form.addEventListener("submit", (e)=>{
     e.preventDefault()
-    let body = document.body
+    let div = document.querySelector("div")
 
     let newObj = new constructorObj(e.target.username.value,e.target.email.value,e.target.password.value)
-    body.innerHTML= `<h1>${newObj.username}</h1>`
+    div.innerHTML += `
+    <p>username : ${newObj.username}</p>
+    <p>user Email : ${newObj.email}</p>
+    <p>user Password : ${newObj.password}</p>`
        
 })
