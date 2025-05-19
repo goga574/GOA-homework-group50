@@ -26,5 +26,5 @@ form.addEventListener("submit", (e)=>{
     <p>username : ${newObj.username}</p>
     <p>user Email : ${newObj.email}</p>
     <p>user Password : ${newObj.password}</p>`
-       
+    
 })

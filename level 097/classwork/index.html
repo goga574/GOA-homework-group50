@@ -57,7 +57,7 @@
 
 
                     <div class="time">
-                        <button id = "time-but">Time</button>
+                        <button id="time-but">Time</button>
                         <button id="heart-but">Heart Rate</button>
                     </div>
                 </div>
@@ -65,11 +65,69 @@
                 <button class="buy">BUY NOW</button>
             </div>
 
-            
+
         </section>
+
+
+
+
+
+
+
+
+
+
         <div class="background">
-            <div class="final">
-                
+            <div class="login-register-div first">
+                <p class="login-register-div-heading">Log in</p>
+
+                <form class="login-form same-form">
+                    <div class="two-input two-input2">
+                        <input type="email" name="email" placeholder="Enter Email">
+                        <input type="password" name="email" placeholder="Enter Password">
+                    </div>
+
+                    <button class="login-button">Log in</button>
+                </form>
+
+                <p class="ask-register">Don't have an account? <span class="register">Register</span></p>
+            </div>
+
+            <!--  -->
+            <div class="login-register-div second">
+                <p class="login-register-div-heading">Register</p>
+
+
+                <form class="register-form same-form">
+                    <div class="two-input two-input2">
+                        <div class="validate">
+                            <input type="text" name="name" placeholder="Enter your name">
+                            <p class="validate-name validation-txt">should equal 4 or less symbol and not blank</p>
+                        </div>
+
+                        <div class="validate">
+                            <input type="text" name="surname" placeholder="Enter your surname">
+                            <p class="validate-surname validation-txt">should equal or less 5 symbol and not blank</p>
+                        </div>
+
+                        <div class="validate">
+                            <input type="email" name="email" placeholder="Enter Email">
+                            <p class="validate-email validation-txt">should't be blank</p>
+                        </div>
+
+                        <div class="validate">
+                            <input type="password" name="password" placeholder="Enter Password">
+                            <p class="validate-password validation-txt">should contain 5 or more symbol should't be blank</p>
+                        </div>
+
+                        <div class="validate">
+                            <input type="password" name="repeat" placeholder="Enter Password again" >
+                            <p class="validate-rep-password validation-txt">should match password should't be blank</p>
+                        </div>
+                    </div>
+                    <button class="login-button" style="padding: 6px 90px;">Register</button>
+                </form>
+                <p class="ask-register">Have an account? <span class="register">Login</span></p>
             </div>
         </div>
     </main>
@@ -85,6 +143,7 @@
 
 
     <script src="scripy.js"></script>
+    <script src="login.js"></script>
 </body>
 
 </html>
