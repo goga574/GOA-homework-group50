@@ -299,7 +299,10 @@ form input{
 }
 
 
-
+.exitbut:hover{
+    transform: scale(1.1);
+    
+}
 
 
 

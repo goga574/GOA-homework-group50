@@ -12,45 +12,111 @@ let validatePassword = document.querySelector(".validate-password")
 
 let validateRep = document.querySelector(".validate-rep-password")
 
-let acc = []
+let height = document.querySelector(".second")
 
-regForm.addEventListener("submit", (e) => {
-    e.preventDefault()
+let loginSec = document.querySelector(".first")
 
+let login = document.querySelector(".go-log")
 
+let reg = document.querySelector(".go-reg")
 
-    let name = e.target.name.value
-    let surname = e.target.surname.value
-    let email = e.target.email.value
-    let password = e.target.password.value
-    let repPassword = e.target.repeat.value
+let exitBut = document.querySelectorAll(".exitbut")
 
+let background = document.querySelector(".background")
+login.addEventListener("click" , ()=>{
+    height.style.display = "none"
+    loginSec.style.display = "flex"
+})
 
-
-
-
-
-
-
-
-    if (repPassword == password) {
-        let acc = {
-            name: name,
-            surname: surname,
-            email: email,
-            password: password,
-            repPassword: repPassword
-        }
-        // e.target.name.value  = ""
-        // e.target.surname.value = ""
-        // e.target.email.value = ""
-        // e.target.password.value = ""
-        // e.target.repeat.value = ""
-    }
-
- 
-
-
-
+reg.addEventListener("click", ()=>{
+    loginSec.style.display = "none"
+    height.style.display = "flex"
 
 })
+
+exitBut[0].addEventListener("click",()=>{
+    loginSec.style.display = "none"
+    background.style.display = "none"
+})
+
+exitBut[1].addEventListener("click",()=>{
+    height.style.display = "none"
+    background.style.display = "none"
+})
+let accs = []
+
+
+let registerFunc = () => {
+    regForm.addEventListener("submit", (e) => {
+        e.preventDefault()
+
+
+
+
+        let name = e.target.name.value
+        let surname = e.target.surname.value
+        let email = e.target.email.value
+        let password = e.target.password.value
+        let repPassword = e.target.repeat.value
+
+
+        if (name === "") {
+            validateName.style.display = "block"
+
+        }
+        else {
+            validateName.style.display = "none"
+        }
+
+
+        if (surname === "") {
+            validateSurname.style.display = "block"
+
+        } else {
+            validateSurname.style.display = "none"
+        }
+
+
+        if (email === "") {
+            validateEmail.style.display = "block"
+        } else {
+            validateEmail.style.display = "none"
+        }
+
+
+        if (password === "") {
+            validatePassword.style.display = "block"
+        } else {
+            validatePassword.style.display = "none"
+        }
+
+        if (validateName.style.display == "block" || validateSurname.style.display == "block" || validateEmail.style.display == "block" || validatePassword.style.display == "block" || validateRep.style.display == "block") {
+            height.style.height = "500px"
+        }
+
+
+
+        if (repPassword === "" || repPassword !== password) {
+            validateRep.style.display = "block"
+        } else if (repPassword == password) {
+            let acc = {
+                name: name,
+                surname: surname,
+                email: email,
+                password: password,
+                repPassword: repPassword
+            }
+
+            e.target.name.value = ""
+            e.target.surname.value = ""
+            e.target.email.value = ""
+            e.target.password.value = ""
+            e.target.repeat.value = ""
+
+            validateRep.style.display = "none"
+            alert("register successfuly")
+        }
+    })
+
+}
+registerFunc()
