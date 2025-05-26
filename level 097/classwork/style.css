@@ -211,7 +211,7 @@ section {
     background-color: #0000008c;
     position: absolute;
     top: 0;
-    display: flex;
+    display: none;
     align-items:center;
     justify-content: center;
     backdrop-filter: blur(10px);
@@ -304,6 +304,14 @@ form input{
     
 }
 
+
+.login-icon{
+    color: #fff;
+    font-size: 20px;
+    position:absolute;
+    right: 40px;
+    cursor: pointer;
+}
 
 
 

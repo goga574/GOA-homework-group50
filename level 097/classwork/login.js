@@ -22,36 +22,56 @@ let reg = document.querySelector(".go-reg")
 
 let exitBut = document.querySelectorAll(".exitbut")
 
+let loginIcon = document.querySelector(".login-icon")
+
 let background = document.querySelector(".background")
-login.addEventListener("click" , ()=>{
+login.addEventListener("click", () => {
     height.style.display = "none"
     loginSec.style.display = "flex"
 })
 
-reg.addEventListener("click", ()=>{
+reg.addEventListener("click", () => {
     loginSec.style.display = "none"
     height.style.display = "flex"
 
 })
 
-exitBut[0].addEventListener("click",()=>{
+exitBut[0].addEventListener("click", () => {
     loginSec.style.display = "none"
     background.style.display = "none"
 })
 
-exitBut[1].addEventListener("click",()=>{
+exitBut[1].addEventListener("click", () => {
     height.style.display = "none"
     background.style.display = "none"
 })
+
+loginIcon.addEventListener("click", () => {
+    background.style.display = "flex"
+    loginSec.style.display = "flex"
+    height.style.display = "none"
+    validateName.style.display = "none"
+    validateSurname.style.display = "none"
+    validateEmail.style.display = "none"
+    validatePassword.style.display = "none"
+    validateRep.style.display = "none"
+})
+
+
+
 let accs = []
 
+
+function Constructor(name,surname,email,password){
+    this.name = name
+    this.surname = surname
+    this.email = email
+    this.password = password
+}
 
 let registerFunc = () => {
     regForm.addEventListener("submit", (e) => {
         e.preventDefault()
-
-
-
 
         let name = e.target.name.value
         let surname = e.target.surname.value
@@ -95,28 +115,21 @@ let registerFunc = () => {
         }
 
 
-
         if (repPassword === "" || repPassword !== password) {
             validateRep.style.display = "block"
-        } else if (repPassword == password) {
-            let acc = {
-                name: name,
-                surname: surname,
-                email: email,
-                password: password,
-                repPassword: repPassword
-            }
+        } else if (repPassword == password && name !== ""  && surname !== ""  && email!== "") {
+
+            accs.push(new Constructor(name,surname,email,password))
+            console.log(accs)
 
             e.target.name.value = ""
             e.target.surname.value = ""
             e.target.email.value = ""
             e.target.password.value = ""
             e.target.repeat.value = ""
-
+            alert("register succesfuly")
             validateRep.style.display = "none"
-            alert("register successfuly")
         }
     })
-
 }
 registerFunc()
