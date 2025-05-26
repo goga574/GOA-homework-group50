@@ -311,11 +311,26 @@ form input{
     position:absolute;
     right: 40px;
     cursor: pointer;
+
 }
 
+.accname{
+    position: absolute;
+    right: 90px;
+    z-index: 10;
+    font-size: 20px;
+    color: #fff;
+    display: none;
+}
 
-
-
+.profile{
+    position: absolute;
+    right: 40px;
+    z-index: 10;
+    font-size: 30px;
+    color: #fff;
+    
+}
 
 
 @media (max-width:1057px) {

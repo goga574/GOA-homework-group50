@@ -32,6 +32,10 @@ let logEmailValidation = document.querySelector(".loginemailvalidate")
 
 let logPasswordValidation = document.querySelector(".loginpasswordvalidate")
 
+let accName = document.querySelector(".accname")
+
+let profileIcon = document.querySelector(".profile")
+
 login.addEventListener("click", () => {
     height.style.display = "none"
     loginSec.style.display = "flex"
@@ -156,33 +160,38 @@ let loginFunc = () => {
             alert("please register")
             loginSec.style.display = "none"
             height.style.display = "flex"
-        }else{
+        } else {
             for (let element of accs) {
 
-            if (element.email !== email) {
-                logEmailValidation.style.display = "block"
-                email = e.target.email.value = ""
+                if (element.email !== email) {
+                    logEmailValidation.style.display = "block"
+                    email = e.target.email.value = ""
 
-            }
-            if (element.password !== password) {
-                logPasswordValidation.style.display = "block"
-                password = e.target.password.value = ""
-            }
+                }
+                if (element.password !== password) {
+                    logPasswordValidation.style.display = "block"
+                    password = e.target.password.value = ""
+                }
 
 
 
-            if (element.email == email && element.password == password) {
-                alert("successful login")
+                if (element.email == email && element.password == password) {
+                    alert("successful login")
 
-                email = e.target.email.value = ""
-                password = e.target.password.value = ""
-                logEmailValidation.style.display = "none"
-                logPasswordValidation.style.display = "none"
-                background.style.display = "none"
+                    email = e.target.email.value = ""
+                    password = e.target.password.value = ""
+                    logEmailValidation.style.display = "none"
+                    logPasswordValidation.style.display = "none"
+                    background.style.display = "none"
+
+                    loginIcon.style.display = "none"
+                    accName.style.display = "block"
+                    profileIcon.style.display = "block"
+                    accName.textContent = element.name
+                }
             }
         }
-        }
-        
+
     })
 }
 
