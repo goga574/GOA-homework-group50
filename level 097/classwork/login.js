@@ -25,6 +25,10 @@ let exitBut = document.querySelectorAll(".exitbut")
 let loginIcon = document.querySelector(".login-icon")
 
 let background = document.querySelector(".background")
+
+let loginForm = document.querySelector(".login-form")
+
+
 login.addEventListener("click", () => {
     height.style.display = "none"
     loginSec.style.display = "flex"
@@ -133,3 +137,23 @@ let registerFunc = () => {
     })
 }
 registerFunc()
+
+let loginFunc = () =>{
+    loginForm.addEventListener("submit", (e)=>{
+        e.preventDefault()
+
+        let email = e.target.email.value
+        let password = e.target.password.value
+
+        for(let element of accs){
+
+            if(element.email == email && element.password == password){
+                alert("successful login")
+            }
+            
+
+        }
+    })
+}
+
+loginFunc()
