@@ -147,6 +147,8 @@ let registerFunc = () => {
 }
 registerFunc()
 
+let isLogin  = false
+
 let loginFunc = () => {
     loginForm.addEventListener("submit", (e) => {
         e.preventDefault()
@@ -177,7 +179,7 @@ let loginFunc = () => {
 
                 if (element.email == email && element.password == password) {
                     alert("successful login")
-
+                    isLogin = true
                     email = e.target.email.value = ""
                     password = e.target.password.value = ""
                     logEmailValidation.style.display = "none"
