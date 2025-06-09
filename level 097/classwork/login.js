@@ -24,6 +24,8 @@ let exitBut = document.querySelectorAll(".exitbut")
 
 let loginIcon = document.querySelector(".login-icon")
 
+let logoutIcon = document.querySelector(".logout-icon")
+
 let background = document.querySelector(".background")
 
 let loginForm = document.querySelector(".login-form")
@@ -147,7 +149,7 @@ let registerFunc = () => {
 }
 registerFunc()
 
-let isLogin  = false
+let isLogin = false
 
 let loginFunc = () => {
     loginForm.addEventListener("submit", (e) => {
@@ -180,16 +182,27 @@ let loginFunc = () => {
                 if (element.email == email && element.password == password) {
                     alert("successful login")
                     isLogin = true
+                    if (isLogin == true) {
+                        loginIcon.style.display = "none"
+                        accName.style.display = "block"
+                        profileIcon.style.display = "block"
+                        accName.textContent = element.name
+                        logoutIcon.style.display = "block"
+
+                    } else {
+                        loginIcon.style.display = "block"
+                        accName.style.display = "none"
+                        profileIcon.style.display = "none"
+                        logoutIcon.style.display = "none"
+
+                    }
                     email = e.target.email.value = ""
                     password = e.target.password.value = ""
                     logEmailValidation.style.display = "none"
                     logPasswordValidation.style.display = "none"
                     background.style.display = "none"
 
-                    loginIcon.style.display = "none"
-                    accName.style.display = "block"
-                    profileIcon.style.display = "block"
-                    accName.textContent = element.name
+
                 }
             }
         }
@@ -198,3 +211,11 @@ let loginFunc = () => {
 }
 
 loginFunc()
+
+logoutIcon.addEventListener("click", () => {
+    isLogin = false
+    loginIcon.style.display = "block"
+    accName.style.display = "none"
+    profileIcon.style.display = "none"
+    logoutIcon.style.display = "none"
+})
