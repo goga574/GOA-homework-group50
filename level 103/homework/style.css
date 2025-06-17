@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Codystar:wght@300;400&family=Underdog&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family: "Caveat", cursive;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #0D2B35;
+    padding:  20px 50px;
+}
+
+header h1{
+    color: #C9886B;
+    font-size: 35px;
+    font-weight: 900;
+}
