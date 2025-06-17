@@ -48,7 +48,7 @@
 
 function n(...names){
     const names1 = ["irakli" , "beqa" , "saba" , "sofia"]
-
+    
     for(let i of names){
         console.log(i)
     }
