@@ -1,7 +1,7 @@
 
 // მოახდინეთ ამ ობიექტის სრული დესტრუქცია და მიღეეთ ცვლადები პირველი აითემის ლეველები ცალცალკე, მეორე აითემის ლეველები ცალცალკე, მეორე აითემში თითოეული სტუდენტის სახელი და გვარი და ასევე ამ სტუდენტის თითოეული ქულა
 const obj = {
-    arr : [
+    arr: [
         {
             level: [10, 50, 100],
         },
@@ -28,23 +28,23 @@ const obj = {
 
 
 const {
-    arr:[
+    arr: [
         {
-            level: [item1, item2, item3], 
+            level: [item1, item2, item3],
         },
 
         {
-            level: [first,second,third],
-            students : [
+            level: [first, second, third],
+            students: [
                 {
-                    name : firstname,
-                    surname:firstsurname,
-                    score :[i,k,l] = firstscore,
+                    name: firstname,
+                    surname: firstsurname,
+                    score: [i, k, l] = firstscore,
                 },
                 {
-                    name:secondname,
-                    surname : secondsurname,
-                    score : [o,p,g] = secodscore
+                    name: secondname,
+                    surname: secondsurname,
+                    score: [o, p, g] = secodscore
                 },
             ],
         },
