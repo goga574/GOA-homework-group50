@@ -15,6 +15,7 @@
 // ◼ მეთოდი უნდა აბრუნებდეს ტრანსპორტის შესახებ ინფორმაციას: 
 //     'ეს არის რაღაც ტრანსპორტი, რომლის მაქს. სიჩქარეა - ${maxSpeed}; ფერი - ${color}; საწვავის რაოდენობა - ${fuel}; განვლილი მანძილი - ${distanceTraveled}'
 // გადაადგილება move(distance, fuelNeeded)
+
 // ◼ ეს მეთოდი გადაადგილებს ტრანსპორტს გარკვეული მანძილით(distance) და ამისთვის ხარჯავს გარკვეული რაოდენობის საწვავს(fuelNeeded).
 // ◼ მოახდინეთ არგუმენტების ვალიდაცია(ორივე უნდა იყოს Number ტიპის).
 // ◼ შეამოწმეთ აქვს თუ არა ტრანსპორტს საკმარისი საწვავი მითითებული მანძილის სრულად დასაფარად.
@@ -57,9 +58,25 @@ class Transport {
     getInfo(){
         console.log(`ეს არის ტრანსპორტი,რომლის მაქსიმალური სიჩქარეა ${this.maxSpeed}; ფერი- ${this.color}; საწვავის რაოდენობა - ${this.fuel}; განვლილი მანძილი - ${this.distanceTraveled}`)
     }
+
+    move(distance, fuelNeeded){
+        if(typeof distance !== "number" || typeof fuelNeeded !== "number"){
+            console.log("enter only integers")
+        }else{
+            if(this.fuel > distance){
+                this.distanceTraveled += distance
+            }else{
+                console.log("not enought fuel")
+            }
+        }
+    }
 }
 
-
+class Car extends Transport{
+    getInfo2(){
+        console.log(`ეს არის მანქანა merso,რომლის სიჩქარეა ${this.maxSpeed} , ფერი არის ${this.color} , საწვავის რაოდენობა არის ${this.fuel} , და გავლილი მანძილი არის ${this.distanceTraveled}`)
+    }
+}
 
 let obj = new Transport(230,"red" , 10 , 100)
 
@@ -68,6 +85,14 @@ obj.refuel(5)
 obj.getInfo()
 obj.changecolor("yellow")
 obj.getInfo()
+obj.move(10,20)
+
+let obj2 = new Car(100,"yellow" , 50 , 200)
+
+obj2.changecolor("blue")
+obj2.move(30,40)
+obj2.getInfo2()
+
 
 
 
