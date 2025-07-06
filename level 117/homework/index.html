@@ -36,7 +36,7 @@
             box-shadow: 0px 0px 20px rgb(206, 206, 206);
             border-radius: 10px;
             display: flex;
-            align-items: start;
+            align-items:center;
             justify-content: start;
             flex-direction: column;
             gap: 30px;
@@ -48,6 +48,21 @@
             height: 200px;
             object-fit: cover;
         }
+
+        .button-div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .Car-Info,.Car-Sound{
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: grey;
+            color: #fff;
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -56,8 +71,8 @@
         <div class="car-div mercedes">
             <img src="./images/cls.jpg" alt="">
             <div class="button-div">
-                  <button class="Car Info">Car Info</button>
-                  <button class="Car Sound">Car Sound</button>     
+                  <button class="Car-Info">Car Info</button>
+                    <button class="Car-Sound">CarSound<button>     
             </div>
         </div>
 
@@ -65,8 +80,8 @@
         <div class="car-div bmw">
             <img src="./images/g30.jpg" alt="">
             <div class="button-div">
-                <button class="Car Info">Car Info</button>
-                <button class="Car Sound">Car Sound</button>    
+                <button class="Car-Info">Car Info</button>
+                <button class="Car-Sound">Car Sound</button>    
             </div>
         </div>
 
@@ -74,8 +89,8 @@
         <div class="car-div audi">
             <img src="./images/rs6.webp" alt="">
             <div class="button-div">
-                <button class="Car Info">Car Info</button>
-                <button class="Car Sound">Car Sound</button>
+                <button class="Car-Info">Car Info</button>
+                <button class="Car-Sound">Car Sound</button>
             </div>
         </div>
     </section>
