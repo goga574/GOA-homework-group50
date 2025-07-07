@@ -75,12 +75,38 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            display: none;
+            
         }
         .info1{
             width: 400px;
             height: 300px;
             background-color: black;
             border-radius: 5px;
+        }
+        .info1{
+            color: #fff;
+            font-family: sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            display: none;
+            
+        }
+        .x{
+            font-size: 40px;
+            color: Red;
+            font-family: sans-serif;
+            position: relative;
+            top: -130px;
+            right: 30px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .x:hover{
+            transform: scale(1.2);
         }
     </style>
 </head>
@@ -118,8 +144,12 @@
     </section>
     <div class="blur">
         <div class="info1">
-            
+            <h1 class="fullInfo"></h1>
+            <p class="fullInfo"></p>
+            <p class="fullInfo"></p>
+            <p class="fullInfo"></p>
         </div>
+        <h2 class="x">x</h2>
     </div>
     <script src="script.js"></script>
 </body>
