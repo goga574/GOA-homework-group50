@@ -62,14 +62,6 @@ class Employee{
 
 }
 
-
-class Boss extends Employee{
-    constructor(id , firstName , lastName , monthSalary , departament){
-        super(id , firstName , lastName , monthSalary )
-        this.departament = departament
-    }
-}
-
 let employeObj = new Employee(123, "giorgi" , "kitrikoza", 1200 )
 
 console.log(employeObj.fullName)
@@ -81,3 +73,48 @@ console.log(employeObj.yearSalary)
 console.log(employeObj.getId)
 
 employeObj.monthxelfasi = 1500
+
+
+class Boss extends Employee{
+    constructor(id , firstName , lastName , monthSalary , departament){
+        super(id , firstName , lastName , monthSalary )
+        this.departament = departament
+    }
+
+    
+
+    set changeDepartment(bossDegSal){
+        if(bossDegSal[1] > this.salary){
+            this.monthxelfasi = bossDegSal[1]
+            console.log(this.salary)
+            
+            this.departament = bossDegSal[0]
+            console.log(this.departament)
+        }else{
+            console.log("tooo loww")
+        }
+    }
+
+    get getInfo(){
+        console.log(`
+                obj info
+            id: ${this.getId} 
+            firstname:${this.firstName}  
+            lastname:${this.lastName}
+            monthsalary:${this.salary}
+            departament:${this.departament}
+            yearSalary:${this.yearSalary}`)
+    }
+}
+
+
+
+
+
+
+
+let bossObj = new Boss(1234, "bossi" , "kalatoza" , 2000, "first")
+
+bossObj.changeDepartment = ["second" , 11100]
+
+bossObj.getInfo
