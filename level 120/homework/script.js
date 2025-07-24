@@ -17,40 +17,80 @@
 // ❔ callBack(orderId) ფუნქცია შექმენით კლასის გარეთ და შემდეგი რამ დააბეჭდინეთ კონსოლზე: 'შეკვეთა #${orderId} დამთავრდა'
 //  ამის შემდეგ შექმენით OrderManager კლასის ობიექტი და გააკეთეთ რამოდენიმე შეკვეთა განსხავებული id და სახელებით  
 
+let form = document.getElementById("form")
 
-class OrderManager{
-    constructor(activeOrders, complatedOrders){
+let userName
+let foodName
+let count = 0
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault()
+
+    let userName = e.target.userName.value
+    let foodName = e.target.foodName.value
+
+    // let index = 
+
+
+
+
+    order1.processOrder(userName, foodName, orderFinish)
+
+})
+
+
+
+
+
+
+
+class OrderManager {
+
+
+    constructor(activeOrders, complatedOrders) {
         this.activeOrders = activeOrders
         this.complatedOrders = complatedOrders
-    }                                                                            
-    
+        this.count = 0
+    }
 
-    
 
-    printStatus(){  
+
+
+    printStatus() {
         let arr = [...this.activeOrders]
         console.log("---activeOrders ---")
         arr.map(item => {
-            console.log(item[0] , item[1])
+            console.log(item[0], item[1])
         })
         console.log("")
         console.log("---complatedOrders---")
         console.log(...this.complatedOrders)
+        console.log("")
     }
 
-    processOrder(orderId, customerName, callback){
+    processOrder(orderId, customerName, callback) {
         this.activeOrders.set(orderId, customerName)
-        console.log("შეკვეთა მიღებულია,შეკვეთის დასამუშავებლად საჭიროა 3 წამი")
+        this.count ++
 
-        setTimeout(() =>{
-            
-        } ,3000)
+        console.log("შეკვეთა მიღებულია,შეკვეთის დასამუშავებლად საჭიროა 3 წამი")
+        this.printStatus()
+        setTimeout(() => {
+            console.log(customerName)
+            this.complatedOrders.add(customerName)
+            this.activeOrders.delete(orderId)
+
+            callback(orderId)
+            this.printStatus()
+        }, 3000)
     }
 }
 
 
-let order1 = new OrderManager(new Map([[1,"giorgi"] , [2 , "beqa"] , [3,"saba"]]), new Set(["irma" , "ilia" , "luka"]) )
+const orderFinish = (orderId) => {
+    console.log(`შეკვეთა #${orderId} დამთავრდა`)
+}
+
+
+let order1 = new OrderManager(new Map([]), new Set())
 
 order1.printStatus()
-
-order1.processOrder()
