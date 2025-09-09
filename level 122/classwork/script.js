@@ -14,7 +14,7 @@ class OrderManeger {
         setTimeout(() => {
             this.complatedOrders.add([customerName, food])
             this.activeOrders.delete(orderId)
-            ol[0].innerHTML = this.render()
+            ol[0].innerHTML = this.render()q
 
             localStorage.setItem("activeorders", JSON.stringify([...this.activeOrders]))
 
@@ -63,6 +63,7 @@ let callback = (orderId) => {
 
 let costumer = new OrderManeger()
 ol[0].innerHTML = costumer.render()
+
 let costumerNumber = JSON.parse(localStorage.getItem("costumerNumber")) || 0
 
 
