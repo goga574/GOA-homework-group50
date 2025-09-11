@@ -7,6 +7,8 @@ class OrderManeger {
         this.complatedOrders = new Set(JSON.parse(localStorage.getItem("complatedorders"))) || new Set()
     }
 
+
+
     processOrder(orderId, customerName, food, callback) {
         this.activeOrders.set(orderId, { customerName: customerName, food: food })
         localStorage.setItem("activeorders", JSON.stringify([...this.activeOrders]))
@@ -14,7 +16,7 @@ class OrderManeger {
         setTimeout(() => {
             this.complatedOrders.add([customerName, food])
             this.activeOrders.delete(orderId)
-            ol[0].innerHTML = this.render()q
+            ol[0].innerHTML = this.render()
 
             localStorage.setItem("activeorders", JSON.stringify([...this.activeOrders]))
 
@@ -46,7 +48,6 @@ class OrderManeger {
         let html = ""
         for (let [id, nameNfood] of this.complatedOrders) {
             html += `<li>${id}: ${nameNfood}</li>`
-
         }
         return html
 
@@ -74,7 +75,9 @@ form.addEventListener("submit", (e) => {
     e.preventDefault()
 
     costumerNumber++
+
     localStorage.setItem("costumerNumber", costumerNumber)
+
     costumer.processOrder(costumerNumber, form.name.value, form.food.value, callback)
     costumer.render()
 

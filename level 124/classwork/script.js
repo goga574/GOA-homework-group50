@@ -50,7 +50,6 @@
 
 let getDataFromBackend = () => {
     let http = new XMLHttpRequest()
-
     http.onreadystatechange = function(){
         
         if(this.readyState == 4){
@@ -62,6 +61,7 @@ let getDataFromBackend = () => {
             }
             console.log(this.readyState)
         }
+
     }
     http.open("GET", "https://jsonplaceholder.typicode.com/todos")
 
