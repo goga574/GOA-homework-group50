@@ -64,9 +64,8 @@ let getDataFromBackend = () => {
 
     }
     http.open("GET", "https://jsonplaceholder.typicode.com/todos")
-
     http.send()
-    // console.log(http)
+    
 
 }
 
