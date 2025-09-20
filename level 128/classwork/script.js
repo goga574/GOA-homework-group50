@@ -52,35 +52,74 @@
 
 
 
-// 1 cw
-
-// შექმენით ფუნქცია რომელიც დააბრუნებს  promise - ს შემდეგ მიიღეთ ფრომისი,წაიკითხეთ მის მიერ დარესოლვებული მნიშვნელობა და დაბეჭდეთ შესაბამისი აიქონი mniSvnelobidan gamomdinare
+// =======================================
 
 
-function createPromise(weather){
-    return new Promise((resolve,reject)=>{
-        if(weather === "weather"){
-            resolve("snowy")
-        }else{
-            reject("snowy")
-        }
+// Promise -- პირობა / დაპირება --> 
+// შესრულებული - fullfulled ,
+// გატეხილი --> rejected, 
+// შესრულების პროცესში -->pending
+
+// promise maker  და promise receiver
+
+
+function getWeatherApi() {
+    return new Promise((resolve, reject) => {
+       resolve("snow")
     })
 }
 
-function resolveCase(data){
-    if(data == "sunny"){
-        console.log("☀️")
-    }else if(data == "snowy"){
+
+
+
+
+
+getWeatherApi().then((data)=>{
+    if (data === "snow") {
         console.log("❄️")
-    }else if(data == "rainy"){
-        console.log("🌧️")
+    } else if (data == "sunny") {
+        console.log("☀️")
     }
-}
-
-function rejectCase(data){
-    console.log(`${data} is rejected`)
-}
+} , (data)=>{
+    console.log("error on " + data)
+})
 
 
 
-createPromise("weather").then(resolveCase,rejectCase)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function displayImg(data){
+//     if(data === "snow"){
+//         console.log("❄️")
+//     }else if(data == "sunny"){
+//         console.log("☀️")
+//     }
+// }
+
+// function getWeather(callback){
+//     setTimeout(()=>{
+//         callback("snow")
+//     },0)
+// }
+
+// getWeather(displayData)
+
+

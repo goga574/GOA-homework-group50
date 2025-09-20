@@ -96,7 +96,7 @@
 
 // შექმენი Promise, რომელიც აბრუნებს შემთხვევით რიცხვს 1-დან 10-მდე. თუ რიცხვი მეტია 5-ზე, პრომისი დაარეზოლვე, შემდეგ კი then()-ში დაბეჭდე "High number: X", ხოლო თუ 5-ზე ნაკლებია, შედეგი დაარეჯექთე. შექმენი ასევე ერრორ ჰენდლერ ფუნქცია, რომელიც ამ დარეჯექთებულ შედეგს დაპრინტავს.
 
-// let number = Math.floor(Math.random()*10)
+// let number = Math.floor(Math.random()*10) + 1
 // function promiseMaker(){
 //     return new Promise(function(resolve,reject){
 //         if(number > 5){
@@ -131,31 +131,32 @@ let obj = {
 }
 
 
+
 function promiseMaker() {
     let isUserFound = Math.floor(Math.random() * 2)
     let timeToFindUser = Math.floor(Math.random() * 10)
-    console.log(timeToFindUser)
+
     return new Promise((resolve, reject) => {
         if (isUserFound === 1) {
             setTimeout(() => {
                 resolve(obj)
-            },`${timeToFindUser}000`)
-        }else{
+            }, `${timeToFindUser}000`)
+        } else {
             reject("You have not access")
         }
     })
-    
+
 }
 
 
-function resolveCase(data){
+function resolveCase(data) {
     console.log("User Info Below ")
     console.log(data)
 }
 
-function rejectCase(data){
+function rejectCase(data) {
     console.log(data)
 }
 
 
-promiseMaker().then(resolveCase,rejectCase)
+promiseMaker().then(resolveCase, rejectCase)
