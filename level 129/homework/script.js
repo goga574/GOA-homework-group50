@@ -1,37 +1,36 @@
-let timep = document.querySelector(".time")
+let tempp = document.querySelector(".celsius")
+let location1 = document.querySelector(".location")
+let weatherType = document.querySelector(".weathertype")
+let feels = document.querySelector(".feelslike")
+let humidity = document.querySelector(".humidity")
+let visibility = document.querySelector(".visibility")
+let wind = document.querySelector(".wind")
+let input = document.querySelector(".input")
+let submit = document.querySelector(".button")
 
-let tempp = document.querySelector("celsius")
+let apiKey = "95a8027ddfc54abaabe101739252109"   
 
+submit.addEventListener("click", () => {
+    let city = input.value.trim()
+    if (!city) {
+        alert("ქალაქი შეიყვანე!")
+        return
+    }
 
+    let url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`
 
-// =====================
-let apiKey = "p8XxaDU0p2oO5zrTI6Ba5gqF9YuwK7y4"; 
-
-let lat = 48.8566;
-let lon = 2.3522;
-
-let fields = "temperature,humidity,windSpeed,cloudCover,precipitation";
-
-let url = `https://api.tomorrow.io/v4/weather/realtime?location=${lat},${lon}&fields=${fields}&apikey=${apiKey}`;
-
-function getApi() {
-    return new Promise((resolve, reject) => {
-        fetch(url)
-            .then((data) => {
-                resolve(data.json())
-            })
-
-    })
-}
-
-
-function getData(response) {
-    console.log(response.data.values.temperature)
-   
-}
-
-getApi()
-    .then(getData)
-    .catch(()=>{
-        console.log("error")
-    })
+    fetch(url)
+        .then(res => res.json())
+        .then(response => {
+            location1.textContent = response.location.name
+            weatherType.textContent = response.current.condition.text
+            tempp.textContent = response.current.temp_c + " °C"
+            visibility.textContent = response.current.vis_km + " km"
+            feels.textContent = response.current.feelslike_c + " °C"
+            humidity.textContent = response.current.humidity + " %"
+            wind.textContent = response.current.wind_kph + " km/h"
+        })
+        .catch(() => {
+            alert("ქალაქი ვერ მოიძებნა!")
+        })
+})
