@@ -22,6 +22,7 @@ submit.addEventListener("click", () => {
     fetch(url)
         .then(res => res.json())
         .then(response => {
+            console.log(response)
             location1.textContent = response.location.name
             weatherType.textContent = response.current.condition.text
             tempp.textContent = response.current.temp_c + " °C"
