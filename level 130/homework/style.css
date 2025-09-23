@@ -1,53 +1,54 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100%;
     background: linear-gradient(135deg, #8b5449 0%, #25242b 70%);
     height: 100vh;
     font-family: sans-serif;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px 100px;
+    position: relative;
 }
 
-.search-and-reg-div{
+.search-and-reg-div {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 50px;
 }
 
-.inputdiv{
+.inputdiv {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
 
-.login-and-signup{
+.login-and-signup {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
 }
 
-header h1{
+header h1 {
     font-size: 45px;
     font-weight: 800;
-    font-family:cursive;
+    font-family: cursive;
     color: #fff;
 }
 
-.searchganresdiv{
+.searchganresdiv {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,13 +57,13 @@ header h1{
 }
 
 
-.searchganresdiv input{
+.searchganresdiv input {
     width: 330px;
     height: 40px;
     color: #000;
     background-color: #ffffff;
     border: none;
-    outline:none;
+    outline: none;
     border-radius: 50px;
     padding: 0px 20px;
     font-family: sans-serif;
@@ -70,7 +71,8 @@ header h1{
 
 
 }
-.bothbtn{
+
+.bothbtn {
     position: absolute;
     right: -1px;
     border-radius: 50px;
@@ -81,15 +83,15 @@ header h1{
     cursor: pointer;
 }
 
-.viaganresbtn{
+.viaganresbtn {
     background: linear-gradient(135deg, #a36b95 0%, #6e70a8 70%);
 }
 
-.vianamebtn{
+.vianamebtn {
     background: linear-gradient(40deg, #3e3737 0%, #55565a 70%);
 }
 
-.searchganresdiv input::placeholder{
+.searchganresdiv input::placeholder {
     color: rgb(117, 114, 114);
     font-size: 16px;
 }
@@ -109,7 +111,7 @@ header h1{
 
 /* staering styling main =================================================== */
 
-main{
+main {
     width: 100%;
     padding: 100px 100px;
     display: flex;
@@ -117,36 +119,175 @@ main{
     justify-content: start;
     flex-direction: column;
     gap: 50px;
+    position: relative;
 }
 
-.heading{
+.heading {
     font-size: 40px;
     color: #fff;
 }
 
 
-.mainDiv{
+.mainDiv {
     width: 100%;
     /* border: 1px solid red; */
     height: 780px;
-    overflow-y: auto;          
-    scrollbar-width: none;    
-    -ms-overflow-style: none; 
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(600px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 550px));
     gap: 10px;
-    align-content: center;
-    justify-content: center;
+    align-content: start;
+    justify-content: start;
     align-items: center;
     justify-items: start;
 }
 
 
 .myDiv::-webkit-scrollbar {
-    display: none;            /* Chrome, Safari, Opera */
+    display: none;
+    /* Chrome, Safari, Opera */
 }
-.child{
+
+.child {
     width: 80%;
-    height: 250px;
-    background-color: blue;
+    height: 200px;
+    background-color: rgba(137, 137, 175, 0.26);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    border-radius: 10px;
+    overflow: hidden;
+
+
+    position: relative;
+    z-index: 1;
+
+
+
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    position: absolute;
+    z-index: -1;
+    background-image: url("https://static.tvmaze.com/uploads/images/original_untouched/44/111282.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(7px);
+}
+
+
+
+.child img {
+    width: 220px;
+    height: 100%;
+
+}
+
+.movieoptions {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    color: #fff;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.movieoptions h3 {
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.success {
+    width: 300px;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border-left: 5px solid green;
+    color: green;
+    position: absolute;
+    right: -300px;
+    top: 50px;
+    animation: none;
+     /* success 3s linear 1 */
+}
+
+.iflogged-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+    display: none;
+}
+.username{
+    font-size: 30px;
+}
+
+.arrow1{
+    cursor: pointer;
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+.logout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 80px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    top: 80px;
+    display: none;
+}
+.logoutp{
+    color: #fff;
+    cursor: pointer;
+}
+.open{
+    cursor: pointer;
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+
+
+
+@keyframes success {
+    0% {
+        right: -300px;
+    }
+
+    20% {
+        right: 50px;
+    }
+
+
+    30% {
+        right: 50px;
+    }
+
+    40% {
+        right: 50px;
+    }
+
+    50% {
+        right: 50px;
+    }
+
+    100% {
+        right: -300px;
+    }
 }

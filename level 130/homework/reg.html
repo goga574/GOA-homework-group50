@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+
+<body>
+
+    <div class="formdiv">
+
+        <div class="coverdiv">
+            <img src="./images/coverimg.jpg" alt="" class="coverimg">
+            <div class="zindexdiv"><h1>watch Best Movies</h1></div>
+        </div>
+        
+        
+        <a href="index.html"><img src="./images/exit.png" alt="" class="exiticon"></a>
+        <div class="login-div same1">
+            <h1 class="headings">Login</h1>
+
+            <form class="login-form same3">
+                <div class="name-div same">
+                    <img src="./images/usericon.png" alt="">
+                    <input type="text" placeholder="Enter Name" name="loginName">
+                    <p class="validate-login-name validate3">Fill the form!</p>
+                    <p class="validate4">Incorrect name</p>
+                </div>
+                <div class="Password-div same">
+                    <img src="./images/lockicon.png" alt="">
+                    <input type="password" placeholder="Enter Password"  name="loginPass">
+                    <p class="validate-login-pass validate3">Fill the form!</p>
+                    <p class="validate4">Incorrect password</p>
+                </div>
+                <input type="submit" class="submit-login same3"  style="padding: 10px 0px;background-color: #7b28d5;border: none;
+                border-radius: 5px;
+                color: #fff;cursor: pointer;">
+                <p class="forgot forgot1">Do not have an account?<span class="reg-span samespan">Signup now</span></p>
+            </form>
+        </div>
+
+
+
+        <div class="reg-div same1">
+
+            <h1 class="headings">Sign Up</h1>
+
+            <form class="reg-form same3">
+                <div class="name-div  same">
+                    <img src="./images/usericon.png" alt="">
+                    <input type="text" placeholder="Enter Name" name="regname">
+                    <p class="validate-name-empty validate" >Fill the form!</p>
+                    <p class="validate-name-first-letter validate2">Firstchar should't be number</p>
+                </div>
+                <div class="email-div  same">
+                    <img src="./images/mail.png" alt="">
+                    <input type="email" placeholder="Enter Email" name="regemail" >
+                    <p class="validate-email-empty validate">Fill the form!</p>
+                </div>
+                <div class="password  same">
+                    <img src="./images/lockicon.png" alt="">
+                    <input type="password" placeholder="Enter Password" name="regpass">
+                    <p class="validate-pass-empty validate">Fill the form!</p>
+                    <p class="validate-password-on-length validate2">Too short! Enter 5 or more letter</p>
+                    
+                </div>
+                <input type="submit" class="submit-reg same3" style="padding: 10px 0px;background-color: #7b28d5;border: none;
+                border-radius: 5px;
+                color: #fff;cursor: pointer;">
+                <p class="forgot">have an account?<span class="login-span samespan">Login now</span></p>
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="reg.js"></script>
+</body>
+
+</html>
