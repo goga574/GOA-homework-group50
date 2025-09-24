@@ -6,6 +6,8 @@ let maindiv = document.querySelector(".mainDiv")
 
 let nameinput = document.querySelector(".movienameinput")
 
+let genreInput = document.querySelector(".moviegenreinput")
+
 searchbtns[1].addEventListener("click", async () => {
     let name = nameinput.value
     let response = await fetch(`https://api.tvmaze.com/search/shows?q=${name}`);
@@ -13,15 +15,56 @@ searchbtns[1].addEventListener("click", async () => {
 
 
 
-    console.log(data[0].show.image.original);
+    console.log(data);
 
-    showOnWeb(data[0].show.name,data[0].show.genres[0],data[0].show.network.country.name,data[0].show.image.original)
+    showOnWeb(data[0].show.name, data[0].show.genres[0], data[0].show.network.country.name, data[0].show.image.original)
+
+
+
+})
+
+
+searchbtns[0].addEventListener("click", async () => {
+    
+
+    let name1 = genreInput.value.toLowerCase()
+
+    let response = await fetch(`https://api.tvmaze.com/search/shows?q=${name1}`)
+    let data = await response.json()
+
+    maindiv.innerHTML = ""
+
+    let found = false
+
+    for (let item of data) {           
+        let show = item.show;         
+        if (show.genres) {             
+            let match = false;
+            for (let g of show.genres) {      
+                if (g.toLowerCase() === name1) { 
+                    match = true
+                    break                
+                }
+            }
+            if (match) {                 
+                found = true
+                let country = show.network ? show.network.country.name : "wrong"
+                let image = show.image ? show.image.original : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Foops-comics&psig=AOvVaw1nc3i50wEatwJMGW0GqPIb&ust=1758832957542000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJDNnMGh8o8DFQAAAAAdAAAAABAE"
+                showOnWeb(show.name, show.genres.join(", "), country, image)
+            }
+        }
+    }
+
+    if (!found) {
+        maindiv.innerHTML = `<p>No shows found for genre: ${name1}</p>`
+    }
+
+
 })
 
 
 
-
-function showOnWeb(name,genre,country,url) {
+function showOnWeb(name, genre, country, url) {
 
     maindiv.innerHTML += `
             <div class="child">
