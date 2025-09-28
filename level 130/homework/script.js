@@ -16,6 +16,7 @@ searchbtns[1].addEventListener("click", async () => {
 
 
     console.log(data);
+    maindiv.innerHTML = ""
 
     showOnWeb(data[0].show.name, data[0].show.genres[0], data[0].show.network.country.name, data[0].show.image.original)
 
@@ -65,6 +66,8 @@ searchbtns[0].addEventListener("click", async () => {
 
 
 function showOnWeb(name, genre, country, url) {
+
+    
 
     maindiv.innerHTML += `
             <div class="child">
