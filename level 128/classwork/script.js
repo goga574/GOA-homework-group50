@@ -63,25 +63,83 @@
 // promise maker  და promise receiver
 
 
-function getWeatherApi() {
-    return new Promise((resolve, reject) => {
-       resolve("snow")
+// function getWeatherApi() {
+//     return new Promise((resolve, reject) => {
+//        resolve("snow")
+//     })
+// }
+
+
+
+
+
+
+// getWeatherApi().then((data)=>{
+//     if (data === "snow") {
+//         console.log("❄️")
+//     } else if (data == "sunny") {
+//         console.log("☀️")
+//     }
+// } , (data)=>{
+//     console.log("error on " + data)
+// })
+
+
+
+
+
+// ========================================
+// Promise - პირობა - დაპირება
+
+// არსებობს სამი სახის პრომისი
+
+// გატეხილი პირობა - broken promise(rejected)
+
+// შესრულებული პირობა - success promise(fulfilled)
+
+// პირობა რომელიც შესრულების პროცესშია - pending(pending)
+
+
+
+
+
+// ==============
+
+// Promise იყოფა ორად Promis maker და Promise Reciever
+
+// function getWeatherApi(){
+//     return new Promise((resolve,reject)=>{
+//         resolve("error")
+//     })
+// }
+
+// function getWeather(data){
+//     console.log(data)
+// }
+
+
+// getWeatherApi().then(getWeather)
+
+
+
+function getData(){
+    return new Promise((resolve,reject)=>{
+        resolve("rainy")
     })
 }
 
 
 
-
-
-
-getWeatherApi().then((data)=>{
-    if (data === "snow") {
+getData().then((data)=>{
+    if(data =="snow"){
         console.log("❄️")
-    } else if (data == "sunny") {
-        console.log("☀️")
+    }else if(data == "sunny"){
+        console.log('☀️')
+    }else if(data == "rainy"){
+        console.log("🌧️")
     }
-} , (data)=>{
-    console.log("error on " + data)
+},(reject)=>{
+    console.log("enter only weather")
 })
 
 
@@ -95,31 +153,5 @@ getWeatherApi().then((data)=>{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-// function displayImg(data){
-//     if(data === "snow"){
-//         console.log("❄️")
-//     }else if(data == "sunny"){
-//         console.log("☀️")
-//     }
-// }
-
-// function getWeather(callback){
-//     setTimeout(()=>{
-//         callback("snow")
-//     },0)
-// }
-
-// getWeather(displayData)
 
 
