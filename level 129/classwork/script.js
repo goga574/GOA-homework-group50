@@ -142,12 +142,13 @@
 function getData(){
     return new Promise((resolve,reject)=>{
         let api = fetch("https://jsonplaceholder.typicode.com/todos")
-        resolve(api)
+        .then(data => { 
+            resolve(data.json())
+        })
+        
     })
 }
-
-getData().then((data)=>{
-    data.json().then(data=>{
+getData()
+    .then(data => {
         console.log(data)
     })
-})
