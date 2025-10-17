@@ -16,7 +16,7 @@ submit.addEventListener("click", () => {
         alert("ქალაქი შეიყვანე!")
         return
     }
-
+    
     let url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`
 
     fetch(url)

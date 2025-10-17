@@ -138,3 +138,4 @@ loginForm.addEventListener("submit", (e) => {
     }
 
 })
+// localStorage.clear()
