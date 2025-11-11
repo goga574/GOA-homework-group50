@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@16.0/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16.0/umd/react-dom.development.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- კომენტარის სახით ახსენით თქვენი აზრით რა არის React და რა გსმენიათ მასზე. ==> React არის ჯავასკრიპტის ბიბლიოთეკა მაგრამ მისი მრავალფეროვვნებისა და სიდიდის გამო მას მოიხსენიებენ როგორც framework
+
+შემოიტანეთ React და React-dom თქვენს HTML ფაილში CDN ის საშუალებით(ორიცე 16.0 ვერსიის).  ==> Done
+
+შექმენით React ელემენტი(h1) createElement მეთოდის გამოყენებით. ახსენით რას აკეთებს იგი და კომენტარის სახით ჩამოწერეთ მისი პარამეტრები.
+createElement ქმნის ელემენტს ვებსაიტზე,მას გადაეცემა სამი მნშვნელობა,პირველი:თუ რა გვინდა ჩავამატოთ,მეორე თუ რა ატრიბუტი გვინდა მივანიჭოთ ჩვენს ელემენტს,
+და მესამე გადაეცემაა შვილი ელემენტი,თუ რა გვინდა იყოს მოთავსებული ჩვენს მიერ შექმნილ ელეემნტი9ეს შეიძ₾ება იყოს რაიმე ტექსტი ან თვით ახალიელემენტიც კი
+
+
+render მეთოდის საშუალებით გამოსახეთ ეს ელემენტი ვებ გვერდზე. ახსენით რას აკეთებს იგი და კომენტარის სახით ჩამოწერეთ მისი პარამეტრები.
+render()ს დააგაეხემა სამი მნიშვნელობა,პირველი:ელემენტი თუ რა გვინდა გაავაკეთოთ(მაგ შევქმნათ ელემენტი),მეორე:თუ სად გვინდა ჩავამატოთ ჩვენი ელემენტი,და მესამე callback ფუნქცია
+
+
+შექმენით თქვენი საყვარელი ფილმების სია. დაუარეთ ამ სიის თითოეულ წევრს და მათგან შექმენით ReactElement(li), გაუწერეთ კლასს ატრიბუტი და გასტილეთ.
+
+body ტეგის შიგნით შექმენით ul ტეგი და მიანიჭეთ მას რაიმე id.
+
+დაარენდერეთ 5 ნაბიჯზე შექმნილი React ელემენტების სია ახლად შექმნილ ul ტეგში.
+ -->
+<body>
+    
+
+    <script>
+        console.log(React)
+        console.log(ReactDOM)
+        
+        // 1)ReactDOM.render(React.createElement("h1",null,"i love goa")
+        
+        // ,document.querySelector("body"))
+        let ul1 = React.createElement("li",{className:"li1"},"The Maze Runner")
+        let ul2 = React.createElement("li",{className:"li2"},"The 100")
+        let ul3 = React.createElement("li",{className:"li3"},"Avatar")
+
+        ReactDOM.render(React.createElement("ul",null,[ul1,ul2,ul3]),
+        
+        document.querySelector("body"))
+
+    </script>
+</body>
+
+</html>

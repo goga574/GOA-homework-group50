@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/35997d38bd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./imgs/Amazon-logo.png" alt="">
+        <p class="accname">name</p>
+        <i class="fa-solid fa-circle-user profile" style="display: none;"></i>
+        <i class="fa-solid fa-right-to-bracket login-icon"></i>
+        <i class="fa-solid fa-arrow-right logout-icon" style="display: none;" ></i>
+    </header>
+
+
+    <main>
+        <section>
+            <div class="watch-div">
+                <img src="./imgs/pink.png" alt="" id="clock">
+                <p class="time1">00:00:00</p>
+                <div class="rate">
+                    <img src="./imgs/heart.png" alt="" id="heart">
+                    <p class="heart-rate">78</p>
+                </div>
+            </div>
+
+
+            <div class="option-div">
+                <h1 id="heading">FitBit 19 - The Smartest Watch</h1>
+
+                <p id="par">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Eveniet earum a voluptas quia
+                    recusandae
+                <p>
+
+                <div class="select-color">
+                    <h2>Select Color</h2>
+
+
+                    <div class="colors">
+                        <div class="black same" id="1"></div>
+
+
+                        <div class="red same" id="2"></div>
+
+
+                        <div class="purple same" id="3"></div>
+
+
+                        <div class="pink same" id="4"></div>
+                    </div>
+                </div>
+
+
+                <div class="features">
+                    <h3>Features</h3>
+
+
+                    <div class="time">
+                        <button id="time-but">Time</button>
+                        <button id="heart-but">Heart Rate</button>
+                    </div>
+                </div>
+
+                <button class="buy">BUY NOW</button>
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <div class="background">
+            <div class="login-register-div first" style="position: relative;">
+                <img src="./imgs/exitbutton.png" alt="" class="exitbut"
+                    style="background-color: red; border-radius: 50%; padding: 1px; position: absolute; top: 10px;right: 10px; transition: 0.3s; cursor: pointer;">
+                <p class="login-register-div-heading">Log in</p>
+
+                <form class="login-form same-form">
+                    <div class="two-input two-input2">
+                        <div class="validate">
+                            <input type="email" name="email" placeholder="Enter Email">
+                            <p class="loginemailvalidate validation-txt" style="display: none;">incorrect email</p>
+                        </div>
+
+                        <div class="validate">
+                            <input type="password" name="password" placeholder="Enter Password">
+                            <p class="loginpasswordvalidate validation-txt" style="display: none;">incorrect password</p>
+                        </div>
+                    </div>
+
+                    <button class="login-button">Log in</button>
+                </form>
+
+                <p class="ask-register">Don't have an account? <span class="register go-reg">Register</span></p>
+            </div>
+
+            <!--  -->
+            <div class="login-register-div second" style="display: none;position: relative;">
+                <img src="./imgs/exitbutton.png" alt="" class="exitbut"
+                    style="background-color: red; border-radius: 50%; padding: 1px; position: absolute; top: 10px;right: 10px; transition: 0.3s; cursor: pointer;">
+                <p class="login-register-div-heading">Register</p>
+
+
+                <form class="register-form same-form">
+                    <div class="two-input two-input2">
+                        <div class="validate">
+                            <input type="text" name="name" placeholder="Enter your name">
+                            <p class="validate-name validation-txt">should not blank</p>
+                        </div>
+
+                        <div class="validate">
+                            <input type="text" name="surname" placeholder="Enter your surname">
+                            <p class="validate-surname validation-txt">should not blank</p>
+                        </div>
+
+                        <div class="validate">
+                            <input type="email" name="email" placeholder="Enter Email">
+                            <p class="validate-email validation-txt">should't be blank</p>
+                        </div>
+
+                        <div class="validate">
+                            <input type="password" name="password" placeholder="Enter Password">
+                            <p class="validate-password validation-txt"> should't be blank</p>
+                        </div>
+
+                        <div class="validate">
+                            <input type="password" name="repeat" placeholder="Enter Password again">
+                            <p class="validate-rep-password validation-txt">should match password should't be blank</p>
+                        </div>
+                    </div>
+                    <button class="login-button" style="padding: 6px 90px;">Register</button>
+                </form>
+                <p class="ask-register">Have an account? <span class="register go-log">Login</span></p>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="scripy.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>

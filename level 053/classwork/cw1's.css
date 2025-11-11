@@ -1,0 +1,21 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+div:hover{
+    transform: rotate(2880deg) scale(1.5);
+    transition-timing-function: ease-in-out;
+    transition:4s;
+    background-color: yellowgreen;
+    transition-delay: 2s;
+}

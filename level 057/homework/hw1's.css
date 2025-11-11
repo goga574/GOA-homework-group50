@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Parisienne&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Karla", serif;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 365px 365px;
+    /* grid-template-rows: 195px 240px; */
+    background-color: hsl(202, 25%, 94%);
+    /* width: 50%; */
+    border-radius: 10px;
+    /* padding: 30px; */
+    
+}
+
+@media (max-width:700px){
+    section{
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+    .firstdiv{
+        grid-column: 1/2;
+    }
+
+    .thirddiv{
+        grid-column: 1/2;
+    }
+}
+
+
+
+.thirddiv {
+    padding: 30px 30px;
+    /* grid-area: 2/2; */
+    color:hsl(204, 43%, 93%); 
+    background-color:hsl(179, 62%, 43%) ;
+}
+
+
+.thirddiv p{
+    padding-top: 15px ;
+    line-height: 20px;
+}
+
+
+
+
+
+
+
+
+
+.seconddiv {
+    padding: 30px 30px;
+    
+    background-color:hsl(179, 57%, 40%) ;
+    grid-area: 2/1;
+    color:hsl(204, 43%, 93%);
+}
+
+
+.seconddiv div{
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+}
+
+
+.seconddiv div h2{
+    opacity: 60%;
+    font-weight:400 ;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.seconddiv div h1{
+    font-weight:700 ;
+}
+
+
+.seconddiv h3{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.seconddiv button{
+    margin-top: 35px;
+    padding: 15px 120px;
+    border-radius: 5px;
+    background-color:  hsl(71, 73%, 54%);
+    border: none;
+    color:hsl(204, 43%, 93%); 
+    box-shadow: 4px 4px 15px rgb(74, 73, 73);
+}
+
+
+.firstdiv {
+    grid-column-start: span 2;
+    padding: 30px 30px;
+}
+
+.firstdiv h1{
+    color:hsl(179, 62%, 43%) ;
+}
+
+.firstdiv h2{
+    padding: 20px 0px;
+    color: hsl(71, 52%, 46%);
+    font-size: 16px;
+}
+
+.firstdiv p {
+    line-height: 20px;
+    opacity: 50%;
+}

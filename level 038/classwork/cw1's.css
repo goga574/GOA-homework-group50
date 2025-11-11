@@ -1,0 +1,26 @@
+.parent-div{
+    font-size: 60px;
+    width: 70%;
+    height: 600px;
+    background-color: black;
+}
+
+.child-div{
+
+    height: 300px;
+    width: 50%;
+    background-color: blue;
+}
+
+
+.p{
+    color: aliceblue;
+    font-size: 50%;
+}
+
+.child-div2{
+
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}

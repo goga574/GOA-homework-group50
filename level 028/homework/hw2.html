@@ -1,0 +1,45 @@
+<!-- 3) შექმენით საიტი თავისუფალ თემაზე უკვე ვიდეოების გამოყენებით -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <h1>video below</h1>
+    <p>if you want to play video please fill registration form below</p>
+    <br><br><br>
+    <form>
+        <label for="name">Enter Name</label>
+        <input id="name" type="text" placeholder="Enter Name" name="name" value="">
+        <br><br>
+        <label for="Surname">Enter Surname</label>
+        <input id=surname type="text" placeholder="Enter Surname" name="surname" value=""> 
+        <br><br>
+        <label for="email">Enter Email</label>
+        <input id="email" type="email" placeholder="Enter Email" name="email" value-="">
+        <br><br>
+        <label for="password">Enter Password</label>
+        <input id="password" type="password" placeholder="password" name="password" value="">
+        <br><br>
+        <h2>You have to choose video play type</h2>
+        <br><br>
+        <label for="dropdown">Choose</label>
+        <select id="dropdown" name="choose type">
+            <option value="muted">muted</option>
+            <option value="autoplay">autoplay</option>
+            <option value="loop">loop</option>
+            <option value="controls">controls</option>
+            <option value="all">All</option>
+        </select>
+    </form>
+    <br>
+    <br>
+    <video controls autoplay loop muted width="400">
+        <source src="./astral-creepy-dark-logo-254198.mp3" type="video/mp3">
+        <source src="astral-creepy-dark-logo-254198.mp3" type="video/mp4">
+        video not supported
+    </video>
+ </body>
+ </html>

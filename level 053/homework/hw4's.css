@@ -1,0 +1,26 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    overflow-y: hidden;
+}
+
+
+h1{
+    color: purple;
+    animation-name: changeColor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes changeColor{
+    from{
+        color: rgb(0, 240, 236);
+    }
+
+    to{
+        color: rgb(0, 240, 236);
+    }
+}

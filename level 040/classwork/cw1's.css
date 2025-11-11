@@ -1,0 +1,16 @@
+.p1{
+    text-transform: capitalize;
+}
+.p2{
+    text-transform: uppercase;
+}
+.p3{
+    text-transform: lowercase;
+}
+
+.goa{
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 30px 10px 20px yellow;
+    color: greenyellow;
+}

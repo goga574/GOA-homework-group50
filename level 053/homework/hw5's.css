@@ -1,0 +1,33 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    overflow-y: hidden;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(81, 0, 255);
+    animation-name: spinDiv;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes spinDiv{
+    from{
+        width: 200px;
+        height: 200px;
+    }
+    50%{
+        background-color: blue;
+        transform: scale(1.5);
+    }
+    to{
+        width: 100px;
+        height: 100px;
+    }
+
+}

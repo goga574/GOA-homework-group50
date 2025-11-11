@@ -1,0 +1,25 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    overflow-y: hidden;
+}
+
+div{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    animation-name: rotateDiv;
+    animation-duration: 3s;
+}
+
+@keyframes rotateDiv{
+    from{
+        transform: rotateX(0deg);
+    }
+
+    to{
+        transform: rotateX(360deg);
+    }
+}

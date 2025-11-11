@@ -1,0 +1,3 @@
+name = "goga"
+
+print(name)
