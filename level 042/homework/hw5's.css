@@ -1,9 +1,0 @@
-a{
-    font-size: 30px;
-}
-
-a:active{
-    background-color: #a52a2a;
-    font-size: 40px;
-    transition: 0.5s;
-}

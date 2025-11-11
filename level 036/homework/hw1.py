@@ -1,1 +1,0 @@
-print("projct/no homework")
