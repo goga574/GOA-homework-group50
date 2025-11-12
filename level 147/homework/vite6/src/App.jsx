@@ -6,7 +6,7 @@ import "./index.css"
 
 function App() {
 
-
+  
   return (
     <>
       <Name name="giorgi" bio="gori" age={20} />
